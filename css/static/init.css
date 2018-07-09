@@ -1,0 +1,59 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video,em{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;outline-style:none;list-style:none}body{line-height:1}select::-ms-expand{display:none}select{-webkit-appearance:none;-moz-appearance:none;appearance:none}input::-ms-expand{display:none}a{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}a:hover,a:focus{text-decoration:none;bblr:expression(this.onFocus=this.blur());outline-style:none}table{border-collapse:collapse;border-spacing:0}input,select{vertical-align:middle}.clearfix::before,.clearfix::after{content:"";height:0;line-height:0;display:block;visibility:hidden;clear:both}.clearfix:after{clear:both}.clearfix{*zoom:1}
+a:hover{text-decoration: none;}input,select,button,textarea{outline: none;}i,em,label{font-style: normal;font-weight: 400;}textarea{ resize:none;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    color: #97A2B3;
+}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder  {
+    color: #97A2B3;
+}
+input::-ms-input-placeholder,textarea::-ms-input-placeholder {
+    color: #97A2B3;
+}
+input::placeholder,textarea::placeholder {
+    color: #97A2B3;
+}
+input[type=text],input[type=password],input[type=email]{
+    background: #FAFBFC;
+    border: 1px solid #E5E5E5;
+}
+.pullDown{
+    width: 280px;
+    height: 246px;
+    overflow: auto;
+    background: #FFFFFF;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.20);
+    position: absolute;
+    top: 36px;
+    left: 51px;
+    z-index: 100;
+    display: none;
+}
+.pullDown>ul {
+    width: 100%;
+}
+.pullDown>ul>li{
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 13px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #394A66;
+}
+.pullDown>ul>li:hover,.pullDown>ul>li.active{
+    cursor: pointer;
+    background: #F9F9F9;
+    color:#F95714;;
+}
+/*三角形向上*/
+#triangle-up,.triangle-up{
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid rgba(0,0,0,.5);
+}
+
+

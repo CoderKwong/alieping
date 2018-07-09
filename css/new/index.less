@@ -1,0 +1,213 @@
+*{box-sizing: border-box;}
+html,body{
+  height: 100%;
+  font-family: "微软雅黑";
+}
+body{
+  font-size: 14px;
+  box-sizing: border-box;
+  background: #FAFAFA;
+  color:  #394A66;
+}
+/*审核失败驳回原因弹框*/
+/*查看删除原因弹框*/
+#delete-reason,#dismisss-reason{
+  .alert-content{
+    width: 540px;
+    height: 321px;
+    border-radius:0;
+    .alert-header{
+      height: 60px;
+      text-align: center;
+    }
+    .alert-body{
+      height: 200px;
+      padding:56px 69px;
+      border: none;
+      p{
+        width:100%;
+        height: 100%;
+        font-size: 14px;
+        color: #394A66;
+      }
+      textarea{
+        width: 100%;
+        height: 89px;
+        margin-bottom: 32px;
+        border: 1px solid #E5E5E5;
+      }
+    }
+    .alert-footer{
+      height:60px;
+      line-height:60px;
+      padding: 0 210px;
+      overflow: auto;
+      border-top: 1px solid #E5E5E5;
+      padding-top: 13px;
+      .button{
+        width: 106px;
+        height: 32px;
+        border-radius: 2px;
+        border: none;
+      }
+      .conform{
+        background: #F95714;
+      }
+      .cancel{
+        color: #282828;
+        background: #FAFBFC;
+        border: 1px solid #E5E5E5;
+        border-radius: 2px;
+      }
+    }
+
+  }
+}
+
+/*头部*/
+nav{
+  height: 48px;
+  line-height: 48px;
+  background: #394A66;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0.28px;
+  overflow: hidden;
+  padding: 0 30px 0  17px;
+  a,a:visited,a:hover,a:active{
+    color: #fff;
+    text-decoration: none;
+  }
+ img{
+   vertical-align: middle;
+ }
+
+}
+/*左边导航栏*/
+.main{
+  width: 100%;
+  @diff:48px;
+  min-height : calc(~"100% - @{diff}");
+  vertical-align: top;
+  position: relative;
+  .aside{
+    width: 240px;
+    background: #fff;
+    box-shadow: 0 2px 4px  rgba(0,0,0,0.08);
+    border: 1px solid #E5E5E5;
+    display: inline-block;
+    height: 100%;
+    position: fixed;
+    top: 48px;
+    bottom: 0px;
+    .accordion {
+      width: 100%;
+      max-width: 240px;
+      margin: 20px auto 20px;
+      background: #FFF;
+      border-radius: 4px;
+      .link {
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
+        display: block;
+        padding: 0 0 0 60px;
+        color:#394A66;
+        font-size: 14px;
+        position: relative;
+        transition: all 0.4s ease;
+        .false{
+          display: none;
+        }
+        i{
+          img{
+            vertical-align: middle;
+          }
+        }
+      }
+      li.open .link {
+        color: #F95714;
+      }
+      li i {
+        position: absolute;
+        left: 23px;
+        transition: all 0.4s ease;
+      }
+      .fa-chevron-down {
+        right: 10px;
+        left: auto;
+        font-size: 16px;
+      }
+      .submenu {
+        display: none;
+        background: #fff;
+        font-size: 14px;
+        li{
+          color: #7A8699;
+        }
+        a{
+          display: block;
+          text-decoration: none;
+          color: #7A8699;
+          padding: 6px 60px;
+          transition: all 0.25s ease;
+        }
+        a:visited,a:hover,a:active {
+          background: #F8FAFC;
+          color: #394A66;
+        }
+      }
+    }
+  }
+  .right-content:after{
+    content: "";
+    clear: both;
+  }
+  .right-content{
+    @diff:240px;
+    width: calc(~"100% - @{diff}");
+    width:-moz-calc(~"100% - @{diff}");
+    width:-webkit-calc(~"100% - @{diff}");
+    //width: 100%;
+    //margin-left: 240px;
+    height:100%;
+    padding: 30px;
+    background: #FAFAFA;
+    //vertical-align: top;
+    //display: inline-block;
+    .content{
+      width:100%;
+      height:100%;
+      background: #fff;
+      border: 1px solid #E5E5E5;
+      position: relative;
+      .headline{
+        height: 50px;
+        line-height: 50px;
+        text-indent: 23px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #21324E;
+        letter-spacing: 0;
+        border-bottom: 1px solid #E5E5E5;
+        a{
+          display: inline-block;
+          padding: 0 3px;
+          height: 100%;
+          text-align: left;
+          line-height: 50px;
+          color: #21324E;
+          border:none;
+        }
+        .active{
+          text-align: center;
+          color: #FC8E00;
+          border-bottom: 2px solid #FC8E00;
+        }
+        img{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

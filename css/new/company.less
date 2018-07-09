@@ -1,0 +1,95 @@
+.headline{
+  a{
+    text-indent: 0;
+  }
+  a.first-child{
+    width: 139px;
+  }
+  a{
+    width:120px;
+    display: inline-block;
+  }
+  a.active{
+    text-align: center;
+  }
+}
+
+.company-content{
+  padding: 8px 24px 0;
+  .module{
+    color: #394A66;
+    border-bottom: 1px solid #EEEEEE;
+    .module-title{
+      margin-top: 22px;
+    }
+    .module-content{
+      font-size: 14px;
+      color:#394A66;
+      margin: 20px 0 30px 64px;
+      a{
+        color: #2064F5;
+        font-size: 14px;
+      }
+      a:after{
+        content: "";
+        clear: both;
+      }
+      span{
+        font-size: 12px;
+        color: #97A2B3;
+        margin-left: 15px;
+        img{
+          vertical-align: bottom;
+        }
+      }
+      .active{
+        color: #FC8E00;
+      }
+      .activing{
+        color:#F95714;
+      }
+    }
+    .module-content.no-result{
+      color: #748093;
+    }
+  }
+  .module:last-child{
+    border: none;
+  }
+}
+
+//行业
+.company-content{
+  .form-group{
+    label{
+      color: #748093;
+      margin-right: 15px;
+    }
+    input[type=text]{
+      width: 280px;
+      height: 34px;
+      text-indent: 12px;
+      color: #394A66;
+    }
+    .button{
+      display: block;
+      width: 400px;
+      height: 44px;
+      margin: 407px auto auto;
+      background: #F95714;
+      border-radius: 4px;
+      border: none;
+      color: #fff;
+    }
+    select{
+      option{
+        color: #394A66;
+      }
+    }
+  }
+}
+
+body .layui-form-select dl dd.layui-this{
+  background: #F9F9F9;
+  color: #F95714;
+}

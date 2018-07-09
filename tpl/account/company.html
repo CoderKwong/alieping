@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p class="headline">
+        <a >企业资料</a>
+    </p>
+    <div class="company-content">
+        <div class="module">
+            <p class="module-title">公司名称</p>
+            <p class="module-content">
+                上海棋至文化传播有限公司
+                <span class="active" ng-show="status==2">
+                    <img src="../img/account/af_authentication.png">
+                    已认证
+                </span>
+                <span ng-show="status==0">
+                    <img src="../img/account/authentication.png">
+                    未认证
+                    <a ui-sref="certificate" class="pull-right">企业认证</a>
+                </span>
+                <span class="activing" ng-show="status==1">
+                    <img src="../img/account/审核中.png" >
+                   审核中
+                </span>
+            </p>
+        </div>
+        <div class="module">
+            <p class="module-title">所属行业</p>
+            <p class="module-content no-result">
+                未设置
+                <a ui-sref="industry" class="pull-right">立即设置</a>
+            </p>
+            <p class="module-content ">
+                贸易消费/制造/营运
+                <a ui-sref="industry" class="pull-right">修改</a>
+            </p>
+        </div>
+        <div class="module">
+            <p class="module-title">企业规模</p>
+            <p class="module-content  no-result">
+                未设置
+                <a ui-sref="scale" class="pull-right">立即设置</a>
+            </p>
+            <p class="module-content">
+                50-150人
+                <a ui-sref="scale" class="pull-right">修改</a>
+            </p>
+        </div>
+        <div class="module">
+            <p class="module-title">企业地址</p>
+            <p class="module-content no-result">
+                未设置
+                <a ui-sref="address" class="pull-right">立即设置</a>
+            </p>
+            <p class="module-content">
+                上海市静安区西康路166号11-14楼
+                <a ui-sref="address" class="pull-right">修改</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

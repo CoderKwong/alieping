@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- 删除-模态框（Modal） -->
+<div class="modal fade delete-alert alert" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content alert-content">
+            <div class="modal-header alert-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body alert-body">
+                <img src="../img/dismission/弹窗上提醒.png" alt="" class="alert-img">
+                <p>
+                    你是否确定要删除该条查询记录？
+                </p>
+            </div>
+            <div class="modal-footer alert-footer">
+                <button type="button" class="btn btn-danger conform button pull-left">
+                    确定
+                </button>
+                <button type="button" class="btn btn-default cancel pull-right button" data-dismiss="modal">
+                    取消
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+    <p class="headline">
+        <a>查询记录</a>
+    </p>
+    <div class="table-parent">
+        <table class="table " >
+            <tr>
+                <td>序号</td>
+                <td>姓名</td>
+                <td>手机号后四位</td>
+                <td>上传日期</td>
+                <td colspan="2">操作</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>王艳</td>
+                <td>2426</td>
+                <td>2018-08-08</td>
+                <td>
+                    <a ui-sref="leaveReport({userId:1,reportFlag:2})" class="detail" >
+                        查看报告
+                    </a>
+                </td>
+                <td>
+                    <a  class="delete" data-toggle="modal" data-target="#deleteModal" >
+                        删除
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>--</td>
+                <td>2426</td>
+                <td>2018-08-08</td>
+                <td>
+                    <a  class="detail" >
+                        重新查询
+                    </a>
+                </td>
+                <td>
+                    <a  class="delete" data-toggle="modal" data-target="#deleteModal" >
+                        删除
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <!--分页样式-->
+        <div class="pageContent">
+            <span>显示条数</span>
+            <select name="total" >
+                <option value="2">2</option>
+            </select>
+            <span class="start-end-page">1-10条/共20条</span>
+            <button class="prev-page">上一页</button>
+            <button class="next-page">下一页</button>
+            <span>前往</span>
+            <input type="text" class="go-to-page"/>
+            <span>页</span>
+        </div>
+    </div>
+</body>
+</html>

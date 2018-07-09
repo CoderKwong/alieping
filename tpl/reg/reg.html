@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en"  ng-app="app" ng-controller="ctrl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/static/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../css/new/demo.css">
+    <link rel="stylesheet" href="../../css/new/reg.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="top-nav pull-left">
+                <img src="../../img/reg/爱猎评.png" alt="aiLiePing">
+            </span>
+            <span class="top-nav pull-right">
+                <a href="#">
+                    <span>
+                        <img src="../../img/reg/首页.png" alt="首页">
+                    </span>
+                    <span>首页</span>
+                </a>
+            </span>
+        </nav>
+    </header>
+    <div class="main">
+        <form class="reg" name="myForm" novalidate >
+            <p class="title">注册爱猎评</p>
+            <span class="circle_left"></span>
+            <span class="circle_right"></span>
+            <div class="form">
+                <!--提示信息-->
+                <div class="phone-error-info" ng-show="myForm.phone.$error.pattern&&change">
+                    <img src="../../img/reg/提示.png" alt="提示">
+                    <span>请输入正确的手机号</span>
+                </div>
+                <div class="phone-error-info" ng-show="">
+                    <img src="../../img/reg/提示.png" alt="提示">
+                    <span>手机号已注册，请直接登录</span>
+                </div>
+                <div class="phone-error-info" ng-show="">
+                    <img src="../../img/reg/提示.png" alt="提示">
+                    <span>验证码错误</span>
+                </div>
+                <div class="phone-error-info" ng-show="">
+                    <img src="../../img/reg/提示.png" alt="提示">
+                    <span>验证码已过期</span>
+                </div>
+                <div class="phone-error-info" ng-show="">
+                    <img src="../../img/reg/提示.png" alt="提示">
+                    <span>请输入6-16位密码，字母区分大小写</span>
+                </div>
+
+                <div>
+                    <label>手机号码</label>
+                    <input type="text"  class="form-control mobile" ng-model="phone" name="phone" ng-blur="change=true" ng-focus="change=false" placeholder="请输入手机号码" ng-required="true" ng-pattern="/^1\d{10}$/" maxlength="11">
+                </div>
+                <div>
+                    <label>短信验证码</label>
+                    <input type="text" class="form-control inputYzm" placeholder="请输入短信验证码" name="yzm"   ng-model="yzm" ng-required="true" ng-pattern="/^\d{5}$/" maxlength="6"  >
+                    <button class="button getYzm pull-right">获取验证码</button>
+                </div>
+                <div>
+                    <label>登录密码</label>
+                    <input type="text" class="form-control password" placeholder="请设置6-16位登录密码"  maxlength="16" minlength="6" ng-model="password" ng-required="true">
+                </div>
+                <div>
+                    <label>企业名称</label>
+                    <input type="text"  class="form-control company" placeholder="请输入您的单位名称"  name="company" ng-model="company" ng-required="true">
+                </div>
+                <div class="regButton">
+                    <input type="button" class="button" name="reg" value="注册 "  />
+                </div>
+                <div class="footer">
+                    <span class="pull-left">
+                        点击注册表示同意
+                        <a href="agree.html" class="agreement">《爱猎评用户协议》</a>
+                    </span>
+                    <span class="pull-right">
+                        如已有账号，请
+                        <a href="login.html" class="reg_login">立即登录</a>
+                        <em class="triangle"></em>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../../js/jquery/jquery.min.js"></script>
+<script src="../../js/bootstrap/bootstrap.min.js"></script>
+<script src="../../js/angular/angular.min.js"></script>
+<script src="../../js/angular/angular-cookies.min.js"></script>
+<script src="../../js/new/same.js"></script>
+<script src="../../js/new/reg.js"></script>
+</html>

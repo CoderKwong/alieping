@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <div class="modal fade delete-alert alert" id="confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                <div class="modal-dialog">
+                    <div class="modal-content alert-content" >
+                        <div class="modal-header alert-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="false">
+                                <img src="../img/reg/关闭.png" alt="">
+                            </button>
+                        </div>
+                        <div class="uploadLeaveConfirm">
+                            <img src="../img/reg/提示1.png" alt="" style="width:60px;height: 60px;">
+                            <div class="uploadLeaveContent">你是否确定要添加姓名为刘晨的员工信息？</div>
+                            <div class="uploadLeaveConfirmBtn">
+                                <div style="flex: 1"></div>
+                                <button class="close search" data-dismiss="modal" aria-hidden="false">确定</button>
+                                <button class="close search" data-dismiss="modal" aria-hidden="false">取消</button>
+                                <div style="flex: 1"></div>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div>
+    <div class="modal fade delete-alert alert" id="addEmployer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content alert-content"   style="width: 800px;height: 630px;">
+                <div class="modal-header alert-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="false">
+                        <img src="../img/reg/关闭.png" alt="">
+                    </button>
+                    <span class="modalTitle">
+                        至善经营管理系统
+                    </span>
+                </div>
+                <div class="modal-body alert-body">
+                    <div class="uploadLeaveSearch">
+                        <input type="text" placeholder="请输入姓名搜索"/>
+                        <input type="button" class="search" ng-click="btnSearch()" value="搜索"/>
+                    </div>
+                    <div class="table-parent uploadLeaveTable" style="overflow: scroll">
+                        <table class="table" >
+                            <tr>
+                                <td>部门</td>
+                                <td>岗位</td>
+                                <td>职级</td>
+                                <td>姓名</td>
+                                <td>性别</td>
+                                <td>操作</td>
+                            </tr>
+                            <tr ng-repeat="x in list" >
+                                <td>技术部</td>
+                                <td>安卓开发工程师</td>
+                                <td>普通员工</td>
+                                <td>刘晨</td>
+                                <td>男</td>
+                                <td onclick="" data-toggle="modal" data-target="#confirm" data-dismiss="modal" aria-hidden="false" >添加</td>
+                            </tr>
+                        </table> 
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+    <p class="headline">
+        <a>上传离职评价</a>
+    </p>
+    <div class="uploadleave">
+        <div class="uploadleave-status">
+            <img src="../img/dismission/step1.png"/>
+            <i class="step_a" id="step_b"></i>
+            <img src="../img/dismission/step2.png"/>
+            <i class="step_a" id="step_b"></i>
+            <!--<img src="../img/dismission/step2_a.png"/>-->
+            <img src="../img/dismission/step3.png"/>
+            <i class="step_a" id="step_b"></i>
+            <!--<img src="../img/dismission/step3_a.png"/>-->
+            <img src="../img/dismission/step4.png"/>
+            <i class="step_a" id="step_b"></i>
+            <!--<img src="../img/dismission/step4_a.png"/>-->
+            <img src="../img/dismission/step5.png"/>
+            <!--<img src="../img/dismission/step5_a.png"/>-->
+        </div>
+        <div class="uploadleave-step">
+            <dl>
+                <dt>选择</dt>
+                <dd>添加人员方式</dd>
+            </dl>
+            <dl>
+                <dt>录入</dt>
+                <dd>员工基础信息</dd>
+            </dl>
+            <dl>
+                <dt>录入</dt>
+                <dd>员工离职信息</dd>
+            </dl>
+            <dl>
+                <dt>（选填）</dt>
+                <dd>曝光失信行为</dd>
+            </dl>
+            <dl>
+                <dt>上传</dt>
+                <dd>联盟数据库</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="leaveStyle">
+        <div class="inputStatus"  data-toggle="modal" data-target="#addEmployer" >
+            <img src="../img/dismission/style_a.png"/>
+            <a ui-sref="leaveStep1" class="uploadLeaveBtn">
+                <img class="uploadLeaveImg" src="../img/dismission/add.png" alt="">
+                在线添加员工
+            </a>
+        </div>
+        <div class="apiStatus"  data-toggle="modal" data-target="#addEmployer">
+            <img src="../img/dismission/style_b.png"/>
+            <a ui-sref="">
+                <img class="uploadLeaveImg" src="../img/dismission/import.png" alt="">
+                API导入员工
+            </a>
+        </div>
+    </div>
+    <div class="uploadLeaveSetp2" style="margin-top: 0;display: none;">
+        <div style="margin-top: 50px;margin-bottom: 30px;">
+            <div class="uploadeLeaveLabel"/>
+            <span>个人资料（必填）</span>
+        </div>
+        <div class="uploadLeaveInfo">
+            <div>
+                <img src="../img/dismission/男头像.png" alt="">
+            </div>
+            <div>
+                <div>
+                    <div>姓名<label style="color:#F95714">*</label>&nbsp;&nbsp;<input type="text" placeholder="请输入姓名"></div>
+                    <div>出生日期<label style="color:#F95714">*</label>&nbsp;&nbsp;<input type="text" placeholder="请输入出生日期"></div>
+                    <div>手机号码<label style="color:#F95714">*</label>&nbsp;&nbsp;<input type="text" placeholder="请输入手机号码"></div>
+                    <div>所在地区&nbsp;&nbsp;<input type="text" placeholder="请输入所在地区"></div>
+                </div>
+                <div>
+                    <div>性别<label style="color:#F95714">*</label>&nbsp;&nbsp;<span class="uploadLeaveWoman">女</span><span class="uploadLeaveMan">男</span></div>
+                    <div>身份证号&nbsp;&nbsp;<input type="text" placeholder="请输入身份证号码"></div>
+                    <div>邮箱号码&nbsp;&nbsp;<input type="text" placeholder="请输入邮箱号码"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uploadLeaveSetp3" style="margin-top: 0;display: none;">
+            <div style="margin-top: 50px;margin-bottom: 30px;">
+                <div class="uploadeLeaveLabel"/>
+                <span>工作经历（必填）</span>
+            </div>
+            <div class="uploadLeaveInfo3">
+                <div>
+                    <div>公司 &nbsp;上海棋至文化传播有限公司</div>
+                </div>
+                <div>
+                    <div>
+                        <div>时间<label style="color:#F95714">*</label>&nbsp;&nbsp;<input type="text" placeholder="请输入姓名"></div>
+                        <div>职位<label style="color:#F95714">*</label>&nbsp;&nbsp;<input type="text" placeholder="请输入出生日期"></div>
+                    </div>
+                    <div>
+                        <div>工作类型&nbsp;&nbsp;<input type="text" placeholder="请输入身份证号码"></div>
+                        <div>部门&nbsp;&nbsp;<input type="text" placeholder="请输入邮箱号码"></div>
+                    </div>
+                </div>
+                <div >
+                        <div style="margin-right: 11px;">工作描述</div>
+                        <div>
+                            <textarea  name="" id="" style="width: 600px;height: 107px;" placeholder="请输入工作描述"/>
+                            <div style="color:rgba(151,162,179,1);text-align: right;width: 100%;margin-top: 5px;">
+                                   0/500字
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+            
+        </div>
+    <div class="uploadLeaveSetp4" style="margin-top: 0;display: none;">
+        <div style="margin-top: 50px;margin-bottom: 30px;">
+            <div class="uploadeLeaveLabel"/>
+            <span>教育经历（选填）</span>
+        </div>
+        <div class="uploadLeaveInfo4">
+            <div>
+                <div>
+                    <div>学校<label style="color:#F95714">*</label>&nbsp;&nbsp;<input type="text" placeholder="请输入姓名"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                    <div>学历<label style="color:#F95714">*</label>&nbsp;&nbsp;<input type="text" placeholder="请输入出生日期"> <span><input type="checkbox">全日制</span></div>
+                </div>
+                <div>
+                    <div>时间&nbsp;&nbsp;<input type="text" placeholder="请输入身份证号码"></div>
+                    <div>专业&nbsp;&nbsp;<input type="text" placeholder="请输入邮箱号码"></div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;background: #ffffff;">
+            <button class="uploadLeaveSetup4">下一步</button>
+        </div>
+    </div>
+</body>
+</html>

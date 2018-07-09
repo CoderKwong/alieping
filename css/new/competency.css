@@ -1,0 +1,111 @@
+.competency-report {
+  padding: 26px 20px;
+}
+.competency-report .title {
+  font-size: 24px;
+  text-align: center;
+}
+.competency-report .notice-info {
+  color: #748093;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin: 16px 0 28px;
+}
+.competency-report .notice-info img {
+  margin-right: 8.7px;
+}
+.competency-report .optional {
+  margin-top: 30px;
+  border: none;
+}
+.competency-report .required,
+.competency-report .optional {
+  border-bottom: 1px solid #E5E5E5;
+}
+.competency-report .required .required-title,
+.competency-report .optional .required-title,
+.competency-report .required .optional-title,
+.competency-report .optional .optional-title {
+  border-left: 4px solid #F95714;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+.competency-report .required .required-title i,
+.competency-report .optional .required-title i,
+.competency-report .required .optional-title i,
+.competency-report .optional .optional-title i {
+  color: #F95714;
+}
+.competency-report .required .subject,
+.competency-report .optional .subject {
+  color: #394A66;
+  margin: 15px 0 30px 10px;
+}
+.competency-report .required .subject .subject-title,
+.competency-report .optional .subject .subject-title {
+  color: #394A66;
+  margin-bottom: 14px;
+}
+.competency-report .required .subject .subject-answer.checked,
+.competency-report .optional .subject .subject-answer.checked {
+  color: #F95714;
+}
+.competency-report .required .subject .subject-answer,
+.competency-report .optional .subject .subject-answer {
+  height: 19px;
+  line-height: 19px;
+  margin: 0 0 15px 24px;
+  color: #748093;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.competency-report .required .subject .subject-answer .subject-radio,
+.competency-report .optional .subject .subject-answer .subject-radio {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  position: relative;
+}
+.competency-report .required .subject .subject-answer .subject-radio input,
+.competency-report .optional .subject .subject-answer .subject-radio input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.competency-report .required .subject .subject-answer .subject-radio input + em,
+.competency-report .optional .subject .subject-answer .subject-radio input + em {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  background: url("../../img/dismission/圆形选中前.png") no-repeat;
+}
+.competency-report .required .subject .subject-answer .subject-radio input:checked + em,
+.competency-report .optional .subject .subject-answer .subject-radio input:checked + em {
+  background: url("../../img/dismission/圆形选中后.png") no-repeat;
+}
+.competency-report .required .subject .subject-answer .line,
+.competency-report .optional .subject .subject-answer .line {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 19px;
+  margin-left: 23px;
+  background: url("../../img/dismission/dashed.png") repeat-x center;
+}
+.competency-report .required .subject .subject-answer .line.checked,
+.competency-report .optional .subject .subject-answer .line.checked {
+  background: url("../../img/dismission/dashed- checked.png") repeat-x center;
+}
+.competency-report .required .subject .subject-answer .subject-score,
+.competency-report .optional .subject .subject-answer .subject-score {
+  float: right;
+  margin-left: 14px;
+}

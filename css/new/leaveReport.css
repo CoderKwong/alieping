@@ -1,0 +1,276 @@
+.leaveReport {
+  padding: 30px 21px 48px;
+  color: #394A66;
+}
+.leaveReport .report-info {
+  font-size: 14px;
+  color: #F95714;
+  letter-spacing: 0;
+  line-height: 21px;
+  padding: 12px 16px 11px 23px;
+  background: rgba(249, 87, 20, 0.04);
+  border: 1px solid #F95714;
+  border-radius: 2px;
+}
+.leaveReport .report-title {
+  font-size: 24px;
+  margin: 30px auto 26px;
+  text-align: center;
+}
+.leaveReport .report-basic {
+  background: #FAFBFC;
+  border: 1px solid #E5E5E5;
+  padding: 28px 0 45px;
+  text-align: center;
+}
+.leaveReport .report-basic .report-head-name {
+  margin: 15px auto;
+  font-size: 24px;
+}
+.leaveReport .report-basic .report-head-basic span {
+  color: #97A2B3;
+  margin-right: 10px;
+}
+.leaveReport .report-basic .report-head-basic .mobile:before {
+  content: "";
+  border-left: 1px solid #E5E5E5;
+  margin: 0 18px 0 12px;
+}
+.leaveReport .report-basic .basic-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 718px;
+  margin: 33px auto auto;
+}
+.leaveReport .report-basic .basic-info .single-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.leaveReport .report-basic .basic-info .single-info .single-title {
+  display: inline-block;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 15px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+}
+.leaveReport .report-basic .basic-info .single-info .upload-status {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+.leaveReport .report-basic .basic-info .single-info .hover-info {
+  display: none;
+  position: absolute;
+  margin: 36px 0 0 152px;
+  padding: 11px 23px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.leaveReport .report-basic .basic-info .single-info .triangle-up {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+}
+.leaveReport .report-basic .basic-info .single-info .upload-status:hover + .hover-info {
+  display: inline-block;
+}
+.leaveReport .report-basic .basic-info .single-info .upload-status.full {
+  background: url(../../img/dismission/信息上传完整.png) no-repeat center;
+}
+.leaveReport .report-basic .basic-info .single-info .upload-status.none {
+  background: url(../../img/dismission/无结果提示.png) no-repeat center;
+}
+.leaveReport .report-basic .basic-info .single-info .upload-status.dangerous {
+  background: url(../../img/dismission/风险提示.png) no-repeat center;
+}
+.leaveReport .report-basic .basic-info .single-info.credit {
+  margin-bottom: 0;
+}
+.leaveReport .personal-info,
+.leaveReport .work-experience,
+.leaveReport .leave-reason,
+.leaveReport .ablity-tabs,
+.leaveReport .break-promise {
+  background: #FAFBFC;
+  border: 1px solid #E5E5E5;
+  margin: 30px 0 21px;
+}
+.leaveReport .personal-info .personal-title,
+.leaveReport .work-experience .personal-title,
+.leaveReport .leave-reason .personal-title,
+.leaveReport .ablity-tabs .personal-title,
+.leaveReport .break-promise .personal-title {
+  background: #FAFBFC;
+  font-size: 18px;
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.leaveReport .personal-info .personal-title img,
+.leaveReport .work-experience .personal-title img,
+.leaveReport .leave-reason .personal-title img,
+.leaveReport .ablity-tabs .personal-title img,
+.leaveReport .break-promise .personal-title img {
+  margin: 0 8px 0 19px;
+  vertical-align: middle;
+}
+.leaveReport .personal-info .personal-content,
+.leaveReport .work-experience .personal-content,
+.leaveReport .leave-reason .personal-content,
+.leaveReport .ablity-tabs .personal-content,
+.leaveReport .break-promise .personal-content {
+  padding: 30px 20px;
+}
+.leaveReport .personal-info .personal-content .content-title,
+.leaveReport .work-experience .personal-content .content-title,
+.leaveReport .leave-reason .personal-content .content-title,
+.leaveReport .ablity-tabs .personal-content .content-title,
+.leaveReport .break-promise .personal-content .content-title {
+  height: 31px;
+  line-height: 31px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  display: block;
+}
+.leaveReport .personal-info .personal-content p,
+.leaveReport .work-experience .personal-content p,
+.leaveReport .leave-reason .personal-content p,
+.leaveReport .ablity-tabs .personal-content p,
+.leaveReport .break-promise .personal-content p {
+  margin-bottom: 15px;
+  height: 19px;
+  width: 49%;
+  display: inline-block;
+}
+.leaveReport .personal-info .personal-content p em,
+.leaveReport .work-experience .personal-content p em,
+.leaveReport .leave-reason .personal-content p em,
+.leaveReport .ablity-tabs .personal-content p em,
+.leaveReport .break-promise .personal-content p em {
+  margin-right: 15px;
+  color: #97A2B3;
+}
+.leaveReport .personal-info .personal-content .work-describe .describe-data,
+.leaveReport .work-experience .personal-content .work-describe .describe-data,
+.leaveReport .leave-reason .personal-content .work-describe .describe-data,
+.leaveReport .ablity-tabs .personal-content .work-describe .describe-data,
+.leaveReport .break-promise .personal-content .work-describe .describe-data,
+.leaveReport .personal-info .personal-content .work-describe em,
+.leaveReport .work-experience .personal-content .work-describe em,
+.leaveReport .leave-reason .personal-content .work-describe em,
+.leaveReport .ablity-tabs .personal-content .work-describe em,
+.leaveReport .break-promise .personal-content .work-describe em {
+  display: inline-block;
+}
+.leaveReport .personal-info .personal-content .work-describe em,
+.leaveReport .work-experience .personal-content .work-describe em,
+.leaveReport .leave-reason .personal-content .work-describe em,
+.leaveReport .ablity-tabs .personal-content .work-describe em,
+.leaveReport .break-promise .personal-content .work-describe em {
+  color: #97A2B3;
+  margin-right: 15px;
+  vertical-align: top;
+}
+.leaveReport .personal-info .personal-content .work-describe p,
+.leaveReport .work-experience .personal-content .work-describe p,
+.leaveReport .leave-reason .personal-content .work-describe p,
+.leaveReport .ablity-tabs .personal-content .work-describe p,
+.leaveReport .break-promise .personal-content .work-describe p {
+  width: 100%;
+}
+.leaveReport .ablity-tabs #myTab {
+  height: 40px;
+  background: #fff;
+}
+.leaveReport .ablity-tabs #myTab .active {
+  border-top: 2px solid #F95714;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-bottom: none;
+}
+.leaveReport .ablity-tabs #myTab .active a {
+  color: #F95714;
+  border-radius: 0;
+  border: none;
+}
+.leaveReport .ablity-tabs #myTab li a {
+  color: #748093;
+  border: none;
+}
+.leaveReport .ablity-tabs #myTab li a:hover {
+  background: #fff;
+  border: none;
+}
+.leaveReport .ablity-tabs #myTab li:first-child {
+  border-left: none;
+}
+.leaveReport .ablity-tabs #tabContent .tab-pane {
+  background: #fff;
+  padding: 42px auto 35px;
+}
+.leaveReport .ablity-tabs #tabContent .tab-pane p {
+  text-align: center;
+  font-size: 36px;
+  padding: 43px 0 41px;
+}
+.leaveReport .ablity-tabs #tabContent .tab-pane p .score {
+  display: inline-block;
+  height: 24px;
+  border-left: 2px solid #D1D7DE;
+  margin: 0 20px;
+}
+.leaveReport .ablity-tabs #tabContent .tab-pane a {
+  display: block;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  margin: 28px auto 0;
+  text-align: center;
+  color: #F95714;
+  border: 1px solid #F95714;
+  border-radius: 4px;
+}
+.leaveReport .break-promise .break-promise-behavior {
+  padding: 19px 20px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.leaveReport .break-promise .break-promise-behavior .behavior-title {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.leaveReport .break-promise .break-promise-behavior .behavior-title img {
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.leaveReport .break-promise .break-promise-behavior .behavior-describe em {
+  color: #97A2B3;
+  margin-right: 15px;
+  display: inline-block;
+}
+.leaveReport .break-promise .break-promise-behavior .behavior-describe p {
+  display: inline-block;
+  margin-left: 74px;
+  margin-top: -12px;
+}
+.leaveReport .break-promise .break-promise-behavior:last-child {
+  border: none;
+  margin-bottom: 37px;
+}

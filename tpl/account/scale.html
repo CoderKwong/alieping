@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p class="headline">
+        <a ui-sref="company">企业信息</a>
+        <a ui-sref="updateMobile" class="active">公司规模</a>
+        <img src="../img/reg/关闭.png" class="off">
+    </p>
+    <form class="company-content layui-form">
+        <div class="form-group layui-inline">
+            <label for="scale">企业规模</label>
+            <div class="layui-input-inline">
+                <select name="scale" lay-verify="required" id="scale">
+                    <option value="">请选择企业规模</option>
+                    <option value="">少于50人</option>
+                    <option value="">50-150人</option>
+                    <option value="">150-500人</option>
+                    <option value="">500-1000人</option>
+                    <option value="">1000-5000人</option>
+                    <option value="">5000-10000人</option>
+                    <option value="">10000人以上</option>
+                </select>
+            </div>
+            <!--<input type="text" placeholder="请选择企业规模" id="scale">-->
+        </div>
+        <div class="form-group">
+            <input type="button" class="button submit" value="提交">
+        </div>
+    </form>
+</body>
+</html>

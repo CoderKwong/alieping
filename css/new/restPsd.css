@@ -1,0 +1,229 @@
+.main .login {
+  width: 480px;
+  height: 512px;
+  -webkit-box-shadow: 0 2px 4px 0 #d3d3d3;
+          box-shadow: 0 2px 4px 0 #d3d3d3;
+}
+.main .login .title {
+  font-size: 20px;
+  color: #21324E;
+  letter-spacing: 0.24px;
+  height: 74.5px;
+  line-height: 74.5px;
+  border-bottom: 1px solid #E5E5E5;
+  margin: 0;
+}
+.main .login .two-step {
+  height: 50px;
+  line-height: 50px;
+  margin-top: 20px;
+  font-size: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main .login .two-step div {
+  display: inline-block;
+}
+.main .login .two-step .line {
+  width: 117.5px;
+  height: 1px;
+  border-bottom: 1px dashed #D8D8D8;
+  margin-bottom: 40px;
+}
+.main .login .two-step .line.active {
+  border-bottom: 1px dashed #F95714;
+}
+.main .login .two-step .first-step {
+  width: 85px;
+  font-size: 0;
+  margin: 0 0 0 85px;
+}
+.main .login .two-step .first-step img,
+.main .login .two-step .first-step span {
+  display: block;
+}
+.main .login .two-step .second-step {
+  width: 57px;
+  font-size: 0;
+}
+.main .login .two-step .second-step img,
+.main .login .two-step .second-step span {
+  display: block;
+}
+.main .login .two-step span {
+  height: 19px;
+  line-height: 19px;
+  margin-top: 11px;
+  font-size: 14px;
+  color: #394A66;
+  letter-spacing: 0.16px;
+  cursor: pointer;
+}
+.main .login .two-step em {
+  top: 40px;
+}
+.main .login .two-step .circle_left {
+  left: -10px;
+}
+.main .login .two-step .circle_right {
+  right: -10px;
+}
+.main .login .form .phone-error-info {
+  /*错误提示*/
+  font-size: 0;
+  height: 19px;
+  margin: 16px 0 0 ;
+  display: none;
+}
+.main .login .form .phone-error-info img {
+  display: inline-block;
+}
+.main .login .form .phone-error-info span {
+  font-size: 14px;
+  color: #F95714;
+  letter-spacing: 0.16px;
+  margin: 0 0 0 7.7px;
+}
+.main .login .form .form-group {
+  width: 400px;
+  margin: 20px auto auto;
+}
+.main .login .form .form-group input[type=text],
+.main .login .form .form-group input[type=password] {
+  color: #394A66;
+  height: 44px;
+  text-indent: 22px;
+  padding: 0;
+  background: #F5F5F5;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.main .login .form .form-group input[type=submit] {
+  height: 44px;
+  margin-top: 0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 4px 0 #BBBBBB;
+  box-shadow: 0 2px 4px 0 #BBBBBB;
+  border-radius: 4px;
+}
+.main .login .form .form-group input:focus {
+  -webkit-box-shadow: 0 2px 4px 0 #BBBBBB;
+          box-shadow: 0 2px 4px 0 #BBBBBB;
+  border: 1px solid #EEEEEE;
+}
+.main .login .form .form-group button {
+  height: 44px;
+  margin-top: 0;
+}
+.main .login .form .form-group label {
+  font-size: 16px;
+  color: #748093;
+  letter-spacing: 0.19px;
+  margin: 0 0 10px 0;
+}
+.main .login .form .form-group .disabled {
+  color: #97A2B3;
+  letter-spacing: 0.19px;
+  background: #F5F5F5;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+  opacity: 1;
+}
+.main .login .form .box-psd label {
+  display: block;
+}
+.main .login .form .box-rem {
+  overflow: hidden;
+  height: 20px;
+}
+.main .login .form .box-rem label {
+  font-size: 14px;
+  color: #97A2B3;
+  letter-spacing: 0.16px;
+  margin: 0;
+}
+.main .login .form .box-rem a {
+  color: #2569F6;
+}
+.main .login .form .box-rem .rem {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  border: none;
+  background: url(../../img/reg/记住我选中前.png) no-repeat;
+  background-size: 100%;
+}
+.main .login .form .box-rem .rem:checked {
+  background: url(../../img/reg/记住我选中后.png) no-repeat;
+  background-size: 100%;
+}
+.main .login .form .has-no-account {
+  margin: 62px 0 0;
+  color: #999999;
+  letter-spacing: 0.14px;
+  position: relative;
+}
+.main .login .form .has-no-account .triangle {
+  position: absolute;
+  right: 165px;
+  top: 3px;
+}
+.main .login .form .has-no-account a {
+  color: #2569F6;
+  text-decoration: underline;
+}
+.main .login .form .has-no-account.active {
+  /*错误提示时，布局变化*/
+  margin: 25px 0 0 ;
+}
+.main .login .form .inputYzm {
+  width: 260px;
+  display: inline-block;
+}
+.main .login .form .getYzm {
+  display: inline-block;
+  width: 120px;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.6;
+  background: #F95714;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+.main .login .form .getYzm.x-button-gray {
+  color: #97A2B3;
+  background: #F5F5F5;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+}
+.main .login .form button {
+  margin: 51px auto auto;
+}
+.main .login .auth-code-login {
+  /*验证码登录*/
+}
+.main .login .auth-code-login .login-button {
+  margin: 51px auto auto;
+}
+.main .login .auth-code-login .login-button .submit {
+  height: 44px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+}
+.main .login .auth-code-login .phone-error-info {
+  color: #748093;
+  display: none;
+}
+.main .login .confirm-psd .confirm-button {
+  margin: 51px auto auto;
+}

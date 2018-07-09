@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="../../css/static/chosen.css">-->
+    <link rel="stylesheet" href="../css/static/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/static/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/static/angular-loading-bar/loading-bar.css">
+    <link rel="stylesheet" href="../css/static/init.css">
+    <link rel="stylesheet" href="../css/new/index.css">
+    <link rel="stylesheet" href="../css/new/certificate.css">
+    <link rel="stylesheet" href="../css/new/account.css">
+    <link rel="stylesheet" href="../css/new/company.css">
+    <link rel="stylesheet" href="../css/new/search.css">
+    <link rel="stylesheet" href="../css/new/myUpload.css">
+    <link rel="stylesheet" href="../css/new/competency.css">
+    <link rel="stylesheet" href="../css/new/leaveReport.css">
+    <link rel="stylesheet" href="../css/new/updateReport.css">
+    <link rel="stylesheet" href="../css/new/updateLeaver.css">
+
+
+</head>
+<body >
+<!--顶部导航-->
+<nav>
+    <span class="pull-left">
+        <img src="../img/reg/爱猎评.png" alt="aiLiePing">
+    </span>
+    <span class="pull-right">
+        <a href="#">
+            <img src="../img/dismission/我的.png">
+            <span>艾小米－ＵＩ设计师</span>
+            <em></em>
+            <span class="exit">退出</span>
+        </a>
+    </span>
+</nav>
+
+
+<!--主体-->
+<div class="main ">
+    <!--侧边栏-->
+    <div class="aside  ">
+        <ul id="accordion" class="accordion">
+            <li>
+                <div class="link">
+                    <i class="fa fa-paint-brush">
+                        <img src="../img/dismission/离职评价点击前.png" alt="" class="click-before">
+                        <img src="../img/dismission/离职评价点击后.png" alt="" class="click-after false">
+                    </i>
+                    离职评价
+                    <i class="fa fa-chevron-down">
+                        <img src="../img/dismission/导航上收起.png" alt="" class="click-before">
+                        <img src="../img/dismission/导航上展开.png" alt="" class="click-after false">
+                    </i>
+                </div>
+                <ul class="submenu">
+                   <li><a ui-sref="search">离职评价查询</a></li>
+                    <li><a ui-sref="uploadLeave">上传离职评价</a></li>
+                    <li><a ui-sref="myUpload"> 我的上传</a></li>
+                    <li><a ui-sref="searchRecord">查询记录</a></li>
+                   <!--<li><a ui-sref="audit">评价审批</a></li>-->
+                </ul>
+            </li>
+            <li>
+                <div class="link">
+                    <i class="fa fa-globe">
+                        <img src="../img/dismission/企业管理点击前.png" alt="" class="click-before">
+                        <img src="../img/dismission/企业管理点击后.png" alt="" class="click-after false">
+                    </i>
+                    企业联盟
+                    <i class="fa fa-chevron-down">
+                        <img src="../img/dismission/导航上收起.png" alt="" class="click-before">
+                        <img src="../img/dismission/导航上展开.png" alt="" class="click-after false">
+                    </i>
+                </div>
+            </li>
+            <li>
+                <div class="link">
+                    <i class="fa fa-globe">
+                        <img src="../img/dismission/账号管理点击前.png" alt="" class="click-before">
+                        <img src="../img/dismission/账号管理点击后.png" alt="" class="click-after false">
+                    </i>
+                    账号管理
+                    <i class="fa fa-chevron-down">
+                        <img src="../img/dismission/导航上收起.png" alt="" class="click-before">
+                        <img src="../img/dismission/导航上展开.png" alt="" class="click-after false">
+                    </i>
+                </div>
+                <ul class="submenu">
+                    <li><a ui-sref="account">账号安全</a></li>
+                    <li><a ui-sref="company">企业资料</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--右侧内容栏-->
+    <div class="right-content pull-right" >
+        <div class="content" ui-view>
+            <!--主体内容-->
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="../js/jquery/jquery.min.js"></script>
+<script src="../js/bootstrap/bootstrap.min.js"></script>
+<script src="../css/static/layui/layui.js"></script>
+<script src="../js/jquery/echarts.js"></script>
+<script src="../js/angular/angular.min.js"></script>
+<script src="../js/angular/loading-bar.min.js"></script>
+<script src="../js/angular/angular-ui-router.js"></script>
+<script src="../js/new/common.js"></script>
+<script src="../js/new/route.js"></script>
+<script src="../js/new/account.js"></script>
+<script src="../js/new/leave.js"></script>
+</html>

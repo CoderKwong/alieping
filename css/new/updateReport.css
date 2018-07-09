@@ -1,0 +1,102 @@
+.headline a {
+  width: auto;
+  padding: 0 10px;
+}
+.updateReport {
+  padding: 30px 20px ;
+  font-size: 14px;
+}
+.updateReport .report-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.updateReport .update-title {
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #394A66;
+  border-left: 4px solid #F95714;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.updateReport .update-content {
+  background: #FAFBFC;
+  border: 1px solid #E5E5E5;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+}
+.updateReport .update-content .form-group {
+  font-size: 0;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.updateReport .update-content .form-group label {
+  text-align: right;
+  color: #748093;
+  font-size: 14px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.updateReport .update-content .form-group label i {
+  color: #F95714;
+}
+.updateReport .update-content .form-group input {
+  width: 240px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  text-indent: 12px;
+}
+.updateReport .update-content .form-group span {
+  font-size: 14px;
+}
+.updateReport .basic-content img {
+  vertical-align: middle;
+  width: 140px;
+  height: 140px;
+  margin: 20px 0;
+}
+.updateReport .basic-content .form-group-parent {
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: -176px;
+  vertical-align: middle;
+}
+.updateReport .basic-content .form-group {
+  width: 49%;
+}
+.updateReport .basic-content .form-group label {
+  width: 63px;
+}
+.updateReport .basic-content .form-group span {
+  display: inline-block;
+  width: 120px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  cursor: pointer;
+}
+.updateReport .basic-content .form-group .female {
+  background: url(../../img/dismission/女性-选中后.png) #ffffff no-repeat 34px;
+  border-right: none;
+}
+.updateReport .basic-content .form-group .female.checked {
+  background: url(../../img/dismission/女-白.png) #f95714 no-repeat 34px;
+  color: #fff;
+}
+.updateReport .basic-content .form-group .male {
+  background: url(../../img/dismission/男-蓝.png) #ffffff no-repeat 34px;
+}
+.updateReport .basic-content .form-group .male.checked {
+  background: url(../../img/dismission/男-白.png) #f95714 no-repeat 34px;
+  color: #fff;
+}
+.updateReport .work-experience span {
+  display: inline-block;
+  height: 19px;
+  line-height: 19px;
+}

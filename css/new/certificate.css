@@ -1,0 +1,83 @@
+.certificate-content {
+  padding: 10px 24px;
+}
+.certificate-content .form-group {
+  position: relative;
+  font-size: 0;
+  margin-bottom: 20px;
+}
+.certificate-content .form-group label {
+  width: 63px;
+  vertical-align: middle;
+  text-align: right;
+  font-size: 14px;
+  color: #748093;
+  letter-spacing: 0;
+}
+.certificate-content .form-group label:after {
+  content: "*";
+  color: #F95714;
+}
+.certificate-content .form-group input[type=text] {
+  width: 300px;
+  height: 34px;
+  margin-left: 15px;
+  text-indent: 12px;
+  font-size: 14px;
+  background: #FAFBFC;
+  border: 1px solid #E5E5E5;
+}
+.certificate-content .form-group .uploadFile {
+  display: inline-block;
+  width: 124px;
+  height: 124px;
+  margin-left: 15px;
+  background: url("../../img/account/上传框.png") no-repeat;
+  position: relative;
+  cursor: pointer;
+}
+.certificate-content .form-group .uploadFile input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.certificate-content .form-group .uploadFile span {
+  position: absolute;
+  font-size: 14px;
+  bottom: 18px;
+  left: 34px;
+  height: 19px;
+  color: #97A2B3;
+}
+.certificate-content .form-group p {
+  display: inline-block;
+  opacity: 0.99;
+  font-size: 14px;
+  color: #97A2B3;
+  letter-spacing: 0;
+  margin-left: 12px;
+  vertical-align: bottom;
+  margin-bottom: 10px;
+}
+.certificate-content .form-group .submit {
+  background: #F95714;
+  border-radius: 4px;
+  width: 400px;
+  height: 44px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  display: block;
+  margin: 99px auto auto;
+}
+.certificate-content .error-info {
+  color: #F95714;
+  height: 19px;
+  line-height: 19px;
+  margin-top: 47px;
+}
+.certificate-content .error-info img {
+  margin-right: 10.8px;
+  vertical-align: middle;
+}

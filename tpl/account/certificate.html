@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p class="headline">
+        <a ui-sref="company">企业资料</a>
+        <a class="active">企业认证</a>
+        <img src="../img/dismission/内容页导航上删除.png" class="off">
+    </p>
+    <form class="certificate-content" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>企业名称</label>
+            <input type="text" placeholder="请填写与营业执照一致的合法公司全称" name="companyName">
+        </div>
+        <div class="form-group">
+            <label>注册号</label>
+            <input type="text" placeholder="营业执照注册号格式为：15位数字" name="registerID">
+        </div>
+        <div class="form-group">
+            <label>法人代表</label>
+            <input type="text" placeholder="请输入企业法人姓名" name="legalPerson">
+        </div>
+        <div class="form-group">
+            <label>营业执照</label>
+            <div class="uploadFile">
+                <input type="file" id="file">
+                <span>上传文件</span>
+            </div>
+            <p>(请上传加盖公章的营业执照复印件，上传文件大小不超过5MB，格式为：bmp,jpg,png)</p>
+        </div>
+        <p class="error-info">
+            <img src="../img/reg/提示.png" >审核过程中认证信息不可修改，请在点击提交审核前确保所填信息正确有效
+        </p>
+        <div class="form-group">
+            <input type="button" value="提交" class="submit">
+        </div>
+    </form>
+</body>
+</html>

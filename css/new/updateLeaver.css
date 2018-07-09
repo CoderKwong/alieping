@@ -1,0 +1,292 @@
+.uploadleave{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #F8FAFC;
+}
+.uploadleave-step dl{
+    width: 96px;
+    height: 42px;
+    margin-left:92px ;
+    margin-top: 10px;
+    margin-bottom: 19px;
+    float: left;
+    /*background-color: gray;*/
+    text-align: center;
+}
+.uploadleave-step dl:first-child{
+    margin-left: 0;
+}
+.uploadleave-status{
+    width: 800px;
+    margin: 29px auto 0 auto;
+}
+.uploadleave-status img{
+    width: 48px;
+    height: 48px;
+    float: left;
+}
+.uploadleave-status .step_a{
+    height: 2px;
+    width: 138px;
+    float: left;
+    margin-top: 24px;
+}
+#step_a{
+    background-color: #C9EACC;
+}
+#step_b{
+    background-color: #DFE3E8;
+}
+.uploadleave-step{
+    width: 848px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+}
+.leaveStyle{
+    margin-top: 0;
+}
+.leaveStyle div{
+    position: relative;
+    height: 108px;
+    width: 837px;
+    margin: 0 auto;
+    border-bottom: 1px solid #E5E5E5;
+}
+.leaveStyle div:last-child{
+    border: 0;
+}
+.leaveStyle div img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.leaveStyle div a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    right: 0;
+    width: 178px;
+    height: 38px;
+    background-color:  #FAFBFC;
+    border: 1px solid #E5E5E5;
+    font-size: 16px;
+}
+.uploadLeaveImg {
+    width: 18px;
+    height: 18px;
+    left: 13px;
+}
+.modalTitle {
+    font-size: 20px;
+    color: #24324c;
+}
+
+.uploadLeaveSearch {
+    line-height: 60px;
+    padding-left: 20px;
+    color: #394A66;
+    font-size: 0;
+  }
+.uploadLeaveSearch input {
+    height: 34px;
+    font-size: 14px;
+  }
+.uploadLeaveSearch input[type=text] {
+    text-indent: 20px;
+    width: 80%;
+    margin: 0 20px 0 0;
+    background: #FAFBFC;
+    border: 1px solid #E5E5E5;
+    outline: none;
+  }
+.uploadLeaveSearch .search {
+    width: 80px;
+    line-height: 34px;
+    outline: none;
+    border: none;
+    background: #F95714;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.uploadLeaveTable {
+    margin-left: 5%;
+    width: 90%;
+    height: 500px;
+}
+.uploadLeaveConfirm {
+    text-align: center;
+    position: relative;
+    height: 85%;
+}
+.uploadLeaveContent {
+    font-size: 20px;
+    margin-top: 39px;
+}
+.uploadLeaveConfirmBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+}
+.uploadLeaveConfirmBtn > button{
+    flex: 1;
+    height: 32px;
+    opacity: 1;
+    font-weight: normal;
+    font-size: 14px;
+
+}
+.uploadLeaveConfirmBtn > button:nth-child(2){
+    
+    margin-right:10px;
+    background: #e86230;
+    color: #FFFFFF;
+}
+.uploadLeaveConfirmBtn > button:nth-child(3){
+    margin-left:10px;
+    background: gba(229,229,229,1);
+    border: 1px solid #E5E5E5;
+}
+.uploadLeaveSetp2 {
+    background: #ffffff;    
+}
+
+.uploadeLeaveLabel {
+    display: inline-block;
+    width: 4px;
+    margin-left: 21px;
+    height: 18px;
+    background: rgba(249,87,20,1);
+}
+.uploadLeaveInfo {
+    display: flex;
+    background: rgba(250,251,252,1);
+    border: 1px solid rgba(229,229,229,1);
+}
+.uploadLeaveInfo > div:nth-child(1) {
+    flex: 1;
+}
+
+.uploadLeaveInfo > div:nth-child(2) {
+    flex: 4;
+    display: flex;
+}
+.uploadLeaveInfo > div:nth-child(2) > div {
+    flex: 1;
+    margin-top: 31px;
+    font-size: 14px;
+    color: rgba(116,128,147,1);
+    text-align: right;
+
+}
+.uploadLeaveInfo > div:nth-child(2) > div > div {
+    margin-bottom: 20px;
+    margin-right: 8px;
+}
+.uploadLeaveInfo > div:nth-child(2) > div > div >input {
+    width: 240px;
+    height: 34px;
+}
+.uploadLeaveInfo > div:nth-child(1) > img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 59px 0 59px 21px;
+}
+.uploadLeaveWoman {
+    font-size: 14px;
+    padding: 7px 42px 7px 62px;
+    background: #e86230;
+    color: #FFFFFF;
+}
+.uploadLeaveMan {
+    font-size: 14px;
+    padding: 7px 42px 7px 62px;
+    border: 1px solid rgba(229,229,229,1);
+}
+.uploadLeaveSetp3 {
+    background: #ffffff;    
+}
+
+
+.uploadLeaveInfo3 {
+    background: rgba(250,251,252,1);
+    border: 1px solid rgba(229,229,229,1);
+    color: rgba(116,128,147,1);
+    text-align: right;
+}
+.uploadLeaveInfo3 > div:nth-child(1) {
+    display: flex;
+    margin-left: 49px;
+    margin-top: 36px;
+}
+.uploadLeaveInfo3 > div:nth-child(2) {
+    display: flex;
+
+}
+
+.uploadLeaveInfo3 > div:nth-child(3) {
+    display: flex;
+    margin-left: 21px;
+    margin-bottom: 50px;
+}
+.uploadLeaveInfo3 > div:nth-child(2) > div > div{
+    margin: 20px 0 20px 49px;
+}
+.uploadLeaveInfo3 > div:nth-child(2) > div > div >input {
+    width: 240px;
+    height: 34px;
+}
+.uploadLeaveSetp4 {
+    background: #ffffff;    
+}
+
+
+.uploadLeaveInfo4 {
+    background: rgba(250,251,252,1);
+    border: 1px solid rgba(229,229,229,1);
+    color: rgba(116,128,147,1);
+    text-align: right;
+}
+.uploadLeaveInfo4 > div:nth-child(1) {
+    display: flex;
+
+}
+.uploadLeaveInfo4 > div:nth-child(1) > div > div{
+    margin: 20px 0 20px 49px;
+}
+.uploadLeaveInfo4 > div:nth-child(1) > div > div >input {
+    width: 240px;
+    height: 34px;
+}
+.uploadLeaveSetup4{
+    margin:59px 270px 43px 270px;
+    width:400px;
+    height:44px;
+    background: #97A2B3;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.19px;
+}
+textarea{
+    padding-left: 12px;
+    padding-top: 7px;
+}
+/*textarea::-moz-placeholder{*/
+    /*margin-left: 12px;*/
+    /*margin-top: 7px;*/
+/*}*/
+
+input{
+    padding-left: 12px;
+}

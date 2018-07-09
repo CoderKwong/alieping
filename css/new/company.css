@@ -1,0 +1,83 @@
+.headline a {
+  text-indent: 0;
+}
+.headline a.first-child {
+  width: 139px;
+}
+.headline a {
+  width: 120px;
+  display: inline-block;
+}
+.headline a.active {
+  text-align: center;
+}
+.company-content {
+  padding: 8px 24px 0;
+}
+.company-content .module {
+  color: #394A66;
+  border-bottom: 1px solid #EEEEEE;
+}
+.company-content .module .module-title {
+  margin-top: 22px;
+}
+.company-content .module .module-content {
+  font-size: 14px;
+  color: #394A66;
+  margin: 20px 0 30px 64px;
+}
+.company-content .module .module-content a {
+  color: #2064F5;
+  font-size: 14px;
+}
+.company-content .module .module-content a:after {
+  content: "";
+  clear: both;
+}
+.company-content .module .module-content span {
+  font-size: 12px;
+  color: #97A2B3;
+  margin-left: 15px;
+}
+.company-content .module .module-content span img {
+  vertical-align: bottom;
+}
+.company-content .module .module-content .active {
+  color: #FC8E00;
+}
+.company-content .module .module-content .activing {
+  color: #F95714;
+}
+.company-content .module .module-content.no-result {
+  color: #748093;
+}
+.company-content .module:last-child {
+  border: none;
+}
+.company-content .form-group label {
+  color: #748093;
+  margin-right: 15px;
+}
+.company-content .form-group input[type=text] {
+  width: 280px;
+  height: 34px;
+  text-indent: 12px;
+  color: #394A66;
+}
+.company-content .form-group .button {
+  display: block;
+  width: 400px;
+  height: 44px;
+  margin: 407px auto auto;
+  background: #F95714;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+}
+.company-content .form-group select option {
+  color: #394A66;
+}
+body .layui-form-select dl dd.layui-this {
+  background: #F9F9F9;
+  color: #F95714;
+}

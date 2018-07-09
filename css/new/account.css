@@ -1,0 +1,184 @@
+.headline a {
+  text-indent: 0;
+}
+.headline a.first-child {
+  width: 139px;
+}
+.headline a {
+  width: 120px;
+  text-align: center;
+  display: inline-block;
+}
+.account-content {
+  padding: 10px 24px;
+  color: #394A66;
+}
+.account-content p:first-child {
+  margin: 0;
+}
+.account-content p {
+  margin-top: 20px;
+}
+.account-content .account-info {
+  padding-left: 64px;
+}
+.account-content .account-info p {
+  margin-top: 20px;
+}
+.account-content .account-info p a {
+  float: right;
+  color: #2064F5;
+}
+.account-content .account-info p a:after {
+  content: "";
+  clear: both;
+}
+.account-content .account-info .error-info {
+  color: #97A2B3;
+  height: 19px;
+  line-height: 19px;
+  margin: 14px 0 20px;
+}
+.account-content .account-info .error-info img {
+  margin-right: 9.7px;
+  vertical-align: middle;
+}
+.account-content .account-info .special {
+  margin-top: 20px;
+}
+.account-content .account-info.first {
+  border-bottom: 1px solid #EEEEEE;
+}
+#success .alert-content {
+  width: 540px;
+  height: 321px;
+  border-radius: 0;
+  text-align: center;
+}
+#success .alert-content .alert-header {
+  padding: 21px 21px 0 ;
+  border: none;
+}
+#success .alert-content .alert-body {
+  padding: 0;
+}
+#success .alert-content .alert-body img {
+  margin: 65px 0 30.2px;
+}
+#success .alert-content .alert-body p {
+  font-size: 20px;
+  color: #394A66;
+}
+.mobile-content,
+.bind-email-content {
+  padding: 10px 24px 0;
+  color: #748093;
+}
+.mobile-content .error-info,
+.bind-email-content .error-info {
+  color: #97A2B3;
+  height: 19px;
+  line-height: 19px;
+  margin: 0 0 26px;
+}
+.mobile-content .error-info img,
+.bind-email-content .error-info img {
+  margin-right: 9.7px;
+  vertical-align: middle;
+}
+.mobile-content .error-info.warning,
+.bind-email-content .error-info.warning {
+  color: #F95714;
+  margin-top: 32px;
+}
+.mobile-content p,
+.bind-email-content p {
+  margin: 0 0 20px;
+}
+.mobile-content .form-group,
+.bind-email-content .form-group {
+  margin-bottom: 20px;
+  font-size: 0;
+}
+.mobile-content .form-group label,
+.bind-email-content .form-group label {
+  font-size: 14px;
+  vertical-align: middle;
+  margin: 0 15px 0 0;
+}
+.mobile-content .form-group .different,
+.bind-email-content .form-group .different {
+  width: 63px;
+  text-align: right;
+}
+.mobile-content .form-group label:after,
+.bind-email-content .form-group label:after {
+  content: "*";
+  color: #F95714;
+}
+.mobile-content .form-group #yzm,
+.bind-email-content .form-group #yzm {
+  width: 200px;
+  height: 34px;
+  line-height: 34px;
+  text-indent: 12px;
+}
+.mobile-content .form-group input[type=text],
+.bind-email-content .form-group input[type=text] {
+  font-size: 14px;
+  height: 34px;
+  text-indent: 12px;
+  color: #394A66;
+}
+.mobile-content .form-group .getYzm,
+.bind-email-content .form-group .getYzm {
+  width: 120px;
+  height: 34px;
+  margin-left: 13px;
+  font-size: 14px;
+  opacity: 0.5;
+  background: #F95714;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+}
+.mobile-content .form-group .yzm-again,
+.bind-email-content .form-group .yzm-again {
+  width: 120px;
+  height: 34px;
+  margin-left: 9px;
+  font-size: 16px;
+  color: #97A2B3;
+  letter-spacing: 0.19px;
+  background: #FAFBFC;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+}
+.mobile-content .form-group .button,
+.bind-email-content .form-group .button {
+  width: 400px;
+  height: 44px;
+  font-size: 16px;
+  margin: 375px auto 0;
+  background: #F95714;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  display: block;
+}
+.mobile-content .form-group .yzm,
+.bind-email-content .form-group .yzm {
+  width: 170px;
+}
+.mobile-content .form-group #set-newPsd,
+.bind-email-content .form-group #set-newPsd,
+.mobile-content .form-group #confirm-newPsd,
+.bind-email-content .form-group #confirm-newPsd {
+  width: 300px;
+}
+.mobile-content .form-group #newMobile,
+.bind-email-content .form-group #newMobile,
+.mobile-content .form-group #email,
+.bind-email-content .form-group #email {
+  width: 300px;
+}

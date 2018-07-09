@@ -1,0 +1,188 @@
+.main .login {
+  width: 480px;
+  height: 512px;
+  box-shadow: 0 2px 4px 0 #d3d3d3;
+}
+.main .login .title {
+  margin: 23px 0 0;
+  font-size: 20px;
+  color: #21324E;
+  letter-spacing: 0.24px;
+}
+.main .login .two-kind-login {
+  height: 50px;
+  line-height: 50px;
+  font-size: 0;
+  position: relative;
+}
+.main .login .two-kind-login span {
+  width: 50%;
+  display: inline-block;
+  font-size: 18px;
+  color: #748093;
+  border-bottom: 1px solid #E6E6E6;
+  letter-spacing: 0.21px;
+}
+.main .login .two-kind-login span:hover {
+  cursor: pointer;
+}
+.main .login .two-kind-login span.active {
+  border-bottom: 1px solid #F95714;
+  color: #F95714;
+}
+.main .login .two-kind-login em {
+  top: 40px;
+}
+.main .login .two-kind-login .circle_left {
+  left: -10px;
+}
+.main .login .two-kind-login .circle_right {
+  right: -10px;
+}
+.main .login .form .phone-error-info {
+  /*错误提示*/
+  font-size: 0;
+  height: 19px;
+  margin: 16px auto auto ;
+  width: 400px;
+}
+.main .login .form .phone-error-info img {
+  display: inline-block;
+  margin-top: -8px;
+}
+.main .login .form .phone-error-info span {
+  font-size: 14px;
+  color: #F95714;
+  letter-spacing: 0.16px;
+  margin: 0 0 0 7.7px;
+}
+.main .login .form .form-group {
+  width: 400px;
+  margin: 20px auto auto;
+}
+.main .login .form .form-group input[type=text],
+.main .login .form .form-group input[type=password] {
+  height: 44px;
+  text-indent: 22px;
+  padding: 0;
+  background: #F5F5F5;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+}
+.main .login .form .form-group input[type=text]:focus,
+.main .login .form .form-group input[type=password]:focus {
+  box-shadow: 0 2px 4px 0 #BBBBBB;
+  border: 1px solid #EEEEEE;
+}
+.main .login .form .form-group input[type=submit],
+.main .login .form .form-group input[type=button] {
+  height: 44px;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  background: #F95714;
+  width: 400px;
+  margin: 20px auto auto;
+  border-radius: 4px;
+}
+.main .login .form .form-group input[type=submit] {
+  box-shadow: 0 2px 4px 0 #BBBBBB;
+  border-radius: 4px;
+}
+.main .login .form .form-group .disabled {
+  color: #97A2B3;
+  letter-spacing: 0.19px;
+  background: #F5F5F5;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+  opacity: 1;
+}
+.main .login .form .form-group label {
+  font-size: 16px;
+  color: #748093;
+  letter-spacing: 0.19px;
+  margin: 0 0 10px 0;
+}
+.main .login .form .box-psd label {
+  display: block;
+}
+.main .login .form .box-rem {
+  overflow: hidden;
+  height: 20px;
+}
+.main .login .form .box-rem #rem {
+  opacity: 0;
+  height: auto;
+}
+.main .login .form .box-rem #rem + em {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  background: url("../../img/reg/记住我选中前.png") no-repeat;
+}
+.main .login .form .box-rem #rem:checked + em {
+  background: url("../../img/reg/记住我选中后.png") no-repeat;
+}
+.main .login .form .box-rem label {
+  position: relative;
+  font-size: 14px;
+  color: #97A2B3;
+  letter-spacing: 0.16px;
+  margin: 0;
+}
+.main .login .form .box-rem a {
+  color: #2569F6;
+}
+.main .login .form .has-no-account {
+  margin: 62px 0 0;
+  color: #999999;
+  letter-spacing: 0.14px;
+  position: relative;
+}
+.main .login .form .has-no-account .triangle {
+  position: absolute;
+  right: 165px;
+  top: 3px;
+}
+.main .login .form .has-no-account a {
+  color: #2569F6;
+  text-decoration: underline;
+}
+.main .login .form .has-no-account.active {
+  /*错误提示时，布局变化*/
+  margin: 25px 0 0 ;
+}
+.main .login .form .inputYzm {
+  width: 260px;
+  display: inline-block;
+}
+.main .login .form .getYzm {
+  display: inline-block;
+  width: 120px;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.6;
+  background: #F95714;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.main .login .auth-code-login {
+  /*验证码登录*/
+  display: none;
+}
+.main .login .auth-code-login .login-button {
+  margin: 60px auto auto;
+}
+.main .login .auth-code-login .login-button.active {
+  margin: 30px auto auto;
+}
+.main .login .auth-code-login .phone-error-info {
+  color: #748093;
+  display: none;
+}

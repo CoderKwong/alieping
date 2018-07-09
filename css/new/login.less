@@ -1,0 +1,193 @@
+.main{
+  .login{
+    width: 480px;
+    height: 512px;
+    box-shadow: 0 2px 4px 0 #d3d3d3;
+    .title{
+      margin: 23px 0 0;
+      font-size: 20px;
+      color: #21324E;
+      letter-spacing: 0.24px;
+    }
+    .two-kind-login{
+      height: 50px;
+      line-height: 50px;
+      font-size: 0;
+      position: relative;
+      span{
+        width:50%;
+        display: inline-block;
+        font-size: 18px;
+        color: #748093;
+        border-bottom: 1px solid #E6E6E6;
+        letter-spacing: 0.21px;
+      }
+      span:hover{
+        cursor: pointer;
+      }
+      span.active{
+        border-bottom:1px solid #F95714;
+        color:#F95714;
+      }
+      em{
+        top:40px;
+      }
+      .circle_left{
+        left:-10px;
+      }
+      .circle_right{
+        right:-10px;
+      }
+    }
+    .form{
+      .phone-error-info{/*错误提示*/
+        font-size: 0;
+        height: 19px;
+        margin: 16px auto auto ;
+        width:400px;
+        img{
+         display: inline-block;
+          margin-top: -8px;
+       }
+        span{
+          font-size: 14px;
+          color: #F95714;
+          letter-spacing: 0.16px;
+          margin: 0 0 0 7.7px;
+        }
+      }
+      .form-group{
+        width: 400px;
+        margin: 20px auto auto;
+        input[type=text],input[type=password]{
+          height: 44px;
+          text-indent: 22px;
+          padding: 0;
+          background: #F5F5F5;
+          border: 1px solid #EEEEEE;
+          border-radius: 4px;
+        }
+        input[type=text]:focus,input[type=password]:focus{
+          box-shadow: 0 2px 4px 0 #BBBBBB;
+          border: 1px solid #EEEEEE;
+        }
+        input[type=submit],input[type=button]{
+          height: 44px;
+          font-size:16px;
+          border:none;
+          color:#fff;
+          background:  #F95714;
+          width: 400px;
+          margin: 20px auto auto;
+          border-radius:4px;
+
+        }
+        input[type=submit] {
+          box-shadow: 0 2px 4px 0 #BBBBBB;
+          border-radius: 4px;
+        }
+        .disabled{
+          color: #97A2B3;
+          letter-spacing: 0.19px;
+          background: #F5F5F5;
+          border: 1px solid #EEEEEE;
+          border-radius: 4px;
+          opacity: 1;
+          //background: #97A2B3;
+        }
+        label{
+          font-size: 16px;
+          color: #748093;
+          letter-spacing: 0.19px;
+          margin: 0 0 10px 0;
+        }
+      }
+      .box-psd{
+        label{
+          display: block;
+        }
+      }
+      .box-rem {
+        overflow: hidden;
+        height: 20px;
+        #rem {
+          opacity: 0;
+          height: auto;
+        }
+        #rem + em {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          position: absolute;
+          left: 0;
+          top: 4px;
+          background: url("../../img/reg/记住我选中前.png") no-repeat;
+        }
+        #rem:checked + em {
+          background: url("../../img/reg/记住我选中后.png") no-repeat;
+        }
+        label {
+          position: relative;
+          font-size: 14px;
+          color: #97A2B3;
+          letter-spacing: 0.16px;
+          margin: 0;
+        }
+        a {
+          color: #2569F6;
+        }
+      }
+      .has-no-account{
+        margin: 62px 0 0;
+        color: #999999;
+        letter-spacing: 0.14px;
+        position: relative;
+        .triangle{
+          position: absolute;
+          right: 165px;
+          top:3px;
+        }
+        a{
+          color: #2569F6;
+          text-decoration: underline;
+        }
+      }
+      .has-no-account.active{ /*错误提示时，布局变化*/
+        margin: 25px 0 0 ;
+      }
+
+      .inputYzm{
+        width: 260px;
+        display:inline-block;
+      }
+      .getYzm{
+        display: inline-block;
+        width: 120px;
+        height: 44px;
+        line-height: 44px;
+        color: #fff;
+        font-size: 16px;
+        opacity: 0.6;
+        background: #F95714;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+    }
+    .auth-code-login{/*验证码登录*/
+      display: none;
+
+      .login-button{
+        margin: 60px auto auto;
+      }
+      .login-button.active{
+        margin: 30px auto auto;
+      }
+      .phone-error-info{
+        color: #748093;
+        display: none;
+      }
+    }
+  }
+}

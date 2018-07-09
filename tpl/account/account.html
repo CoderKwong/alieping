@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p class="headline">
+        <a>账号管理</a>
+    </p>
+    <div class="account-content">
+        <p>账户信息</p>
+        <div class="account-info first">
+            <p>手机号码：17554443836 <a ui-sref="updateMobile">修改手机</a></p>
+            <p>当前邮箱：－－ <a ui-sref="bindEmail">立即绑定</a></p>
+            <p class="error-info">
+                <img src="../img/reg/提示.png" >您还没有绑定任何邮箱
+            </p>
+        </div>
+        <p>设置密码</p>
+        <div class="account-info">
+            <p class="error-info special">
+                <img src="../img/reg/提示.png" >安全性高的密码可以使账号更安全，建议您定期修改密码
+                <a ui-sref="updatePsd">修改密码</a>
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>

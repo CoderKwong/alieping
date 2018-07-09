@@ -1,0 +1,104 @@
+/*删除记录*/
+.alert .alert-content {
+  width: 540px;
+  height: 272px;
+  border-radius: 0;
+}
+.alert .alert-content .alert-header {
+  padding: 18px 15px;
+  border: none;
+}
+.alert .alert-content .alert-body {
+  border: none;
+  text-align: center;
+  padding: 0;
+}
+.alert .alert-content .alert-body p {
+  margin: 10px 0 60px;
+  font-size: 20px;
+  color: #282828;
+}
+.alert .alert-content .alert-footer {
+  height: 58px;
+  line-height: 58px;
+  padding: 0 154px;
+  overflow: auto;
+  border-top: 1px solid #E5E5E5;
+  padding-top: 13px;
+}
+.alert .alert-content .alert-footer .button {
+  width: 106px;
+  height: 32px;
+  border-radius: 2px;
+  border: none;
+}
+.alert .alert-content .alert-footer .conform {
+  background: #F95714;
+}
+.alert .alert-content .alert-footer .cancel {
+  color: #282828;
+  background: #FAFBFC;
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+}
+.table-parent {
+  padding: 20px;
+  position: relative;
+  color: #748093;
+}
+.table-parent table {
+  border: 1px solid #E5E5E5;
+  margin-bottom: 0;
+}
+.table-parent table tr:first-child td {
+  height: 40px;
+  line-height: 40px;
+  background: #FAFBFC;
+  border-top: none ;
+}
+.table-parent table tr {
+  border: none;
+  border-bottom: 1px solid #E5E5E5;
+}
+.table-parent table tr td {
+  height: 50px;
+  padding: 0 8px;
+  line-height: 50px;
+}
+.table-parent table tr td a {
+  font-size: 14px;
+  color: #2569F6;
+}
+.table-parent table tr:last-child {
+  border-bottom: none;
+}
+.table-parent .pageContent span,
+.table-parent .pageContent select,
+.table-parent .pageContent button {
+  margin-right: 8px;
+}
+.table-parent .pageContent select {
+  text-indent: 6px;
+}
+.table-parent .pageContent select,
+.table-parent .pageContent button {
+  width: 60px;
+}
+.table-parent .pageContent input {
+  width: 38px;
+  text-align: center;
+}
+.table-parent .pageContent select,
+.table-parent .pageContent input,
+.table-parent .pageContent button {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #748093;
+  border: 1px solid #E5E5E5;
+  background: #fff;
+  outline: none;
+}
+.table-parent .pageContent .prev-page {
+  margin-right: 4px;
+}

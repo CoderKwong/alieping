@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--离职查询-->
+    <p class="headline">
+        <a>离职评价查询</a>
+    </p>
+    <div>
+        <div class="leaveSearch">
+            <input type="text" placeholder="请输入姓名或手机号后四位查询"/>
+            <input type="button" class="search" ng-click="btnSearch()" value="搜索"/>
+        </div>
+        <div class="searchResult">
+            <p class="search-num">共找到<i>0</i>条符合条件的数据</p>
+            <!--空状态-->
+            <div class="no-result" ng-show="searchNum=true">
+                <img src="../img/dismission/缺省页.png"  />
+                <p>很抱歉，暂无符合条件的数据！</p>
+            </div>
+            <div class="single-data">
+                <img src="../img/dismission/默认头像－女.png" class="head-portrait" >
+                <div class="single-left">
+                    <h2 class="single-name">张璐</h2>
+                    <p>
+                        <label>性别</label>
+                        女
+                    </p>
+                    <p>
+                        <label>年龄</label>
+                        24　(1994年）
+                    </p>
+                    <p>
+                        <label>手机</label>
+                        138****3534
+                    </p>
+                </div>
+                <div class="single-right pull-right">
+                    <h2 class="company">上传企业</h2>
+                    <p class="company-name">
+                        <img src="../img/dismission/已联盟-填写信息中.png">
+                        上海棋至**有限公司
+                    </p>
+                    <div class="hover-info">
+                        <i id="triangle-up"></i>
+                        该信息由联盟企业发布
+                    </div>
+                    <a  class="leaveReport" ui-sref="leaveReport({userId:1,reportFlag:0})"> 查看离职评价</a>
+                </div>
+            </div>
+        </div>
+        <!--分页样式 ng-hide="searchNum=true"-->
+        <div class="pageContent" >
+            <span>显示条数</span>
+            <!--<select name="total" >-->
+            <!--<option value="1">1</option>-->
+            <!--</select>-->
+            <select ng-change="change(selectedLimit)" ng-model="selectedLimit" ng-options="value.limit for value in values"></select>
+            <span class="start-end-page">1-5条/共20条</span>
+            <button type="button" class="prev-page" ng-click="prevPage()">上一页</button>
+            <button type="button" class="next-page" ng-click="nextPage()">下一页</button>
+            <span>前往</span>
+            <input type="text" class="go-to-page"/>
+            <span>页</span>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+<script>
+
+</script>
+</html>

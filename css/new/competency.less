@@ -1,0 +1,89 @@
+.competency-report{
+  padding:26px 20px;
+  .title{
+    font-size: 24px;
+    text-align: center;
+  }
+  .notice-info{
+    color: #748093;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin: 16px 0 28px;
+    img{
+      margin-right:8.7px;
+    }
+  }
+  .optional{margin-top: 30px;border: none;}
+  .required,.optional{
+    border-bottom: 1px solid #E5E5E5;
+    .required-title,.optional-title{
+      border-left:4px solid #F95714;
+      padding-left: 10px;
+      font-size: 16px;
+      margin-bottom: 22px;
+      i{
+        color:#F95714;
+      }
+    }
+    .subject{
+      color: #394A66;
+      margin: 15px 0 30px 10px;
+      .subject-title{
+        color: #394A66;
+        margin-bottom: 14px;
+      }
+      .subject-answer.checked{
+        color: #F95714;
+      }
+      .subject-answer{
+        height: 19px;
+        line-height: 19px;
+        margin:0 0 15px 24px;
+        color: #748093;
+        display: flex;
+        align-items: center;
+        .subject-radio{
+          width: 14px;
+          height: 14px;
+          margin-right: 8px;
+          position: relative;
+          input{
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+          }
+          input+em{
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            background: url("../../img/dismission/圆形选中前.png") no-repeat;
+          }
+          input:checked+em{
+            background: url("../../img/dismission/圆形选中后.png") no-repeat;
+          }
+        }
+        .subject-content{
+        }
+        .line{
+          flex:1;
+          height: 19px;
+          margin-left: 23px;
+          background: url("../../img/dismission/dashed.png") repeat-x center;
+        }
+        .line.checked{
+          background: url("../../img/dismission/dashed- checked.png") repeat-x center;
+        }
+        .subject-score{
+          float: right;
+          margin-left: 14px;
+
+        }
+      }
+
+    }
+
+  }
+}

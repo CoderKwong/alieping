@@ -1,0 +1,138 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+label{
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+}
+/*水平垂直居中*/
+.center-middle{
+    position: absolute;
+    margin: 77px auto 0;
+    left: 0;
+    right: 0;
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translateX(-50%) translateY(-50%);*/
+    /*margin: 80px auto;*/
+}
+/*三角形-往右*/
+.triangle{
+    width:0;
+    height:0;
+    border-width:6px 0 6px 6px;
+    border-style:solid;
+    border-color:transparent transparent transparent #2569F6;
+}
+/*左右小球*/
+.circle_left,.circle_right{
+    /* border: 1px solid red;*/
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    background: #FAFAFA;
+    box-shadow: 0 2px 4px 0 #d3d3d3;
+}
+.circle_left{
+    box-shadow: 2px 0 0 #d3d3d3;
+}
+.circle_right{
+    box-shadow: -2px 0 #d3d3d3;
+}
+/* input*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #97A2B3;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #97A2B3;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #97A2B3;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #97A2B3;
+
+}
+/*去掉谷歌表单默认填充的黄色背景框*/
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    -webkit-text-fill-color: #394A66;
+    -webkit-box-shadow: 0 0 0px 1000px #F5F5F5 inset;
+}
+
+/*butto按钮active*/
+button{
+    box-shadow: 0 2px 4px 0 #BBBBBB;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    outline: none;
+}
+input[type=button],input[type=submit]{
+    outline:none;
+}
+.x-button-active{
+    background: #F95714;
+}
+.x-button-gray{
+    background: #97A2B3;
+}
+.x-color-active{
+    color:#F95714;
+}
+.x-bg-active{
+    background: #F95714;
+}
+.x1-border-active{
+    border:1px solid #F95714;
+}
+.x1-borderB-active{
+    border-bottom:1px solid #F95714;
+}
+.x1-borderB-gray{
+    border-bottom: 1px solid #F95714;
+}
+.x2-border-active{
+    border-bottom:2px solid #F95714;
+}
+.x2-borderB-active{
+    border-bottom:2px solid #F95714;
+}
+.x5-borderL-active{
+    border-left:5px solid #F95714;
+}
+.x-radius-circle{
+    border-radius: 50%;
+}
+.x-radius-four{
+    border-radius: 4px;
+}
+.x-radius-eight{
+    border-radius: 8px;
+}
+.x-bg-w{
+    background: #fff;
+}
+.x-margin{
+    margin: 0 auto;
+}
+.x-center{
+    text-align: center;
+}
+.x-font-active{
+    color: #F95714;
+}
+.x-font-gray{
+    color: #748093;
+}

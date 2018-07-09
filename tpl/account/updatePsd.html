@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--修改成功-->
+    <div class="modal fade delete-alert alert" id="success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content alert-content">
+                <div class="modal-header alert-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <img src="../img/reg/关闭.png" alt="">
+                    </button>
+                </div>
+                <div class="modal-body alert-body">
+                    <img src="../img/dismission/弹窗上确认.png">
+                    <p>恭喜您，修改密码成功</p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+    <p class="headline">
+        <a ui-sref="account">账号管理</a>
+        <a ui-sref="updatePsd" class="active">修改密码</a>
+        <img src="../img/reg/关闭.png" class="off">
+    </p>
+    <!--第一步-->
+    <div class="bind-email-content" ng-show="flag">
+        <p class="error-info">
+            <img src="../img/reg/提示.png" >您正在修改密码，请先使用手机验证码验证身份。
+        </p>
+        <p>当前手机号码：<span class="telephone">15921820231</span></p>
+        <div class="form-group">
+            <label for="yzm">验证码</label>
+            <input type="text" id="yzm" placeholder="请输入验证码">
+            <input type="button" class="getYzm" value="获取验证码">
+        </div>
+        <div class="form-group">
+            <input type="button" class="button next" value="下一步" ng-click="next()">
+        </div>
+    </div>
+    <!--第二步-->
+    <div class="bind-email-content" ng-show="!flag">
+        <div class="form-group">
+            <label for="set-newPsd">设置新密码</label>
+            <input type="text" id="set-newPsd" placeholder="请输入６-16位密码，字母区分大小写">
+        </div>
+        <div class="form-group">
+            <label for="confirm-newPsd">确认新密码</label>
+            <input type="text" id="confirm-newPsd" placeholder="再次确认密码">
+        </div>
+        <p class="error-info warning">
+            <img src="../img/reg/提示.png" >两次输入的密码不一致
+        </p>
+        <div class="form-group">
+            <input type="button" class="button submit" value="确定" data-toggle="modal" data-target="#success">
+        </div>
+    </div>
+</body>
+</html>

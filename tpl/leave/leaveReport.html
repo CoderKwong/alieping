@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--离职报告-->
+    <p class="headline">
+        <a ui-sref="search" ng-show="reportFlag==0">离职评价查询</a>
+        <a ui-sref="uploadLeave" ng-show="reportFlag==1">上传离职评价</a>
+        <a ui-sref="searchRecord" ng-show="reportFlag==2">查询记录</a>
+        <a ui-sref="searchRecord" ng-show="reportFlag==3">我的上传</a>
+        <a class="active">离职报告</a>
+        <img src="../img/dismission/内容页导航上删除.png" class="off">
+    </p>
+    <div class="leaveReport">
+        <p class="report-info">
+            为了降低企业招聘人才的风险，就张璐的工作经历做细致的调查，本次调查结果获取途径合法，内容真实有效。本报告不得用于法律诉
+            讼依据，仅供招聘决策参考之用。在任何情况下，对由于使用本报告所造成的损失，本公司不承担任何责任。 且未经本公司许可，本报告内
+            容不得向任何第三方透露。
+        </p>
+        <p class="report-title">张璐的离职报告</p>
+        <div class="report-basic">
+            <img src="../img/dismission/女头像.png" class="report-head-img">
+            <p class="report-head-name">张璐</p>
+            <p class="report-head-basic">
+                <span>年龄</span>24 （1994年）
+                <span class="mobile">手机</span>13816403435
+            </p>
+            <!--信息完善-->
+            <div class="basic-info">
+                <div class="left">
+                    <div class="single-info">
+                        <img src="../img/dismission/基本信息.png" alt="基本信息">
+                        <span class="single-title">基本信息</span>
+                        <!--上传完整1（full），没有反馈2(none)，存在风险3(dangerous)-->
+                        <span class="upload-status full"></span>
+                        <div class="hover-info">
+                            <i class="triangle-up"></i>
+                            代表该类目信息上传完整
+                        </div>
+                    </div>
+                    <div class="single-info">
+                        <img src="../img/dismission/工作经历.png" alt="工作经历">
+                        <span class="single-title">工作经历</span>
+                        <span class="upload-status none"></span>
+                        <div class="hover-info">
+                            <i class="triangle-up"></i>
+                            代表该类目结果尚未反馈
+                        </div>
+                    </div>
+                    <div class="single-info">
+                        <img src="../img/dismission/能力评价.png" alt="能力评价(HR)">
+                        <span class="single-title">能力评价(HR)</span>
+                        <span class="upload-status none"></span>
+                    </div>
+                    <div class="single-info credit ">
+                        <img src="../img/dismission/失信行为.png" alt="失信行为">
+                        <span class="single-title">失信行为</span>
+                        <span class="upload-status none"></span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="single-info">
+                        <img src="../img/dismission/教育经历.png" alt="教育经历">
+                        <span class="single-title">教育经历</span>
+                        <span class="upload-status dangerous"></span>
+                        <div class="hover-info">
+                            <i class="triangle-up"></i>
+                            表示该类目结果可能存在风险
+                        </div>
+                    </div>
+
+                    <div class="single-info">
+                        <img src="../img/dismission/离职原因.png" alt="离职原因">
+                        <span class="single-title">离职原因</span>
+                        <span class="upload-status full"></span>
+                    </div>
+
+                    <div class="single-info">
+                        <img src="../img/dismission/能力评价.png" alt="能力评价(领导)">
+                        <span class="single-title">能力评价(领导)</span>
+                        <span class="upload-status none"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--基本信息-->
+        <div class="personal-info">
+            <p class="personal-title">
+                <img src="../img/dismission/基本信息2.png">
+                基本信息</p>
+            <div class="personal-content">
+                <p class="content-title">张璐</p>
+                <p><em>性　　别</em>女</p>
+                <p><em>出生日期</em>1994/10/27 (23岁)</p>
+                <p><em>身份证号</em>42014151109891564</p>
+                <p><em>手机号码</em>13816403534</p>
+                <p><em>邮箱号码</em>2729554266@qq.com</p>
+                <p><em>所在地区</em>上海市静安区西康路166号11楼</p>
+            </div>
+        </div>
+        <!--工作经验-->
+        <div class="work-experience">
+            <p class="personal-title">
+                <img src="../img/dismission/工作经历2.png">
+                工作经历</p>
+            <div class="personal-content">
+                <p class="content-title">棋至文化传播有限公司</p>
+                <p><em>任职日期</em>2016/12/21  —  2018/03/30</p>
+                <p><em>在职状态</em>全职</p>
+                <p><em>任职部门</em>技术研发</p>
+                <p><em>任职岗位</em>前端</p>
+                <div class="work-describe">
+                    <em>工作描述</em>
+                    <div class="describe-data">
+                        <p>
+                            1、组织本单位统计工作，进行统计工作的上传下达，制定统计工作制度，开展统计业务;
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--离职原因-->
+        <div class="leave-reason">
+            <p class="personal-title">
+                <img src="../img/dismission/离职原因2.png">
+                离职原因</p>
+            <div class="personal-content">
+                <p class="content-title">被动离职－个人原因（绩效业绩严重不达标）</p>
+                <div class="work-describe">
+                    <em>具体描述</em>
+                    <div class="describe-data">
+                        <p>
+                            该员工自2017/12月起连续四个月的绩效考核不达标，工作态度也不认真，故根据公司的相关规章制度予以辞退。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--能力测评-->
+        <div class="ablity-tabs">
+            <p class="personal-title">
+                <img src="../img/dismission/能力测评2.png">
+                能力测评</p>
+            <!--两种测评-->
+            <ul class="nav nav-tabs" id="myTab">
+                <li class="active"><a data-target="#hr" data-toggle="tab">HR测评</a></li>
+                <li><a data-target="#leader" data-toggle="tab">上级测评</a></li>
+            </ul>
+            <div class="tab-content" id="tabContent">
+                <!--未审核-->
+                <div class="tab-pane active" id="hr">
+                    <p>
+                        <span>张璐得分：</span>5
+                        <span class="score"></span>
+                        <span>平均得分：</span>6
+                    </p>
+                    <!-- 为 ECharts 准备一个具备大小（宽高）的 容器 -->
+                    <div id="chart1" style="height: 400px;"></div>
+                    <a>查看评价详情</a>
+                </div>
+                <div class="tab-pane" id="leader">
+                    <p>张璐得分：6.8 </p>
+                    <div id="chart2" style="height: 400px;"></div>
+                </div>
+        </div>
+    </div>
+        <!--失信行为-->
+        <div class="break-promise">
+            <p class="personal-title">
+                <img src="../img/dismission/失信行为2.png">
+                失信行为</p>
+            <div class="break-promise-behavior">
+                <p class="behavior-title"><img src="../img/dismission/1.png">打卡考勤－伪造病假单</p>
+                <div class="behavior-describe">
+                    <em>时间描述</em>
+                    <p>
+                        “五一”前夕，想出国旅游的小张因假期太短难以成行，
+                        其女友小王灵机一动，想出了一个提交虚假病假条的
+                        主意。于是小王向公司提交了某医院的诊断证明，病假条写明颈椎病，建议全休1周，公司因此批准了小张的病假，后小张利用病休和“五一”小长假，与女友出国旅游。
+                    </p>
+                </div>
+            </div>
+            <div class="break-promise-behavior">
+                <p class="behavior-title"><img src="../img/dismission/2.png">打卡考勤－伪造病假单</p>
+                <div class="behavior-describe">
+                    <em>时间描述</em>
+                    <p>
+                        “五一”前夕，想出国旅游的小张因假期太短难以成行，
+                        其女友小王灵机一动，想出了一个提交虚假病假条的
+                        主意。于是小王向公司提交了某医院的诊断证明，病假条写明颈椎病，建议全休1周，公司因此批准了小张的病假，后小张利用病休和“五一”小长假，与女友出国旅游。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

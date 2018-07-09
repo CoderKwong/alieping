@@ -1,0 +1,231 @@
+.leaveReport{
+  padding: 30px 21px 48px;
+  color:#394A66;
+  .report-info{
+    font-size: 14px;
+    color: #F95714;
+    letter-spacing: 0;
+    line-height: 21px;
+    padding:12px 16px 11px 23px;
+    background: rgba(249,87,20,0.04);
+    border: 1px solid #F95714;
+    border-radius: 2px;
+  }
+  .report-title{
+    font-size: 24px;
+    margin: 30px auto 26px;
+    text-align: center;
+  }
+  .report-basic{
+    background: #FAFBFC;
+    border: 1px solid #E5E5E5;
+    padding: 28px 0 45px;
+    text-align: center;
+    .report-head-name{
+      margin: 15px auto;
+      font-size: 24px;
+    }
+    .report-head-basic{
+      span{
+        color: #97A2B3;
+        margin-right: 10px;
+      }
+      .mobile:before{
+        content: "";
+        border-left: 1px solid #E5E5E5;
+        margin: 0 18px 0 12px;
+      }
+    }
+    .basic-info{
+      display:flex;
+      justify-content: space-between;
+      width: 718px;
+      margin: 33px auto auto;
+      .single-info{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .single-title{
+          display: inline-block;
+          width: 160px;
+          height: 40px;
+          line-height: 40px;
+          margin: 0 15px;
+          text-align: center;
+          background: #FFFFFF;
+          border: 1px solid #E5E5E5;
+          border-radius: 4px;
+        }
+        .upload-status{
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          position: relative;
+        }
+        .hover-info{
+          display: none;
+          position: absolute;
+          margin:36px 0 0 152px;
+          padding: 11px 23px;
+          color: #fff;
+          background: rgba(0,0,0,0.50);
+          box-shadow: 0 0 4px 0 rgba(0,0,0,0.20);
+          border-radius: 5px;
+        }
+        .triangle-up{
+          position: absolute;
+          top: -6px;
+          left: 50%;
+        }
+        .upload-status:hover+.hover-info{
+          display: inline-block;
+        }
+        .upload-status.full{
+          background: url(../../img/dismission/信息上传完整.png) no-repeat center;
+        }
+        .upload-status.none{
+          background: url(../../img/dismission/无结果提示.png) no-repeat center;
+        }
+        .upload-status.dangerous{
+          background: url(../../img/dismission/风险提示.png) no-repeat center;
+        }
+      }
+      .single-info.credit{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .personal-info,.work-experience,.leave-reason,.ablity-tabs,.break-promise{
+    background: #FAFBFC;
+    border: 1px solid #E5E5E5;
+    margin: 30px 0 21px;
+    .personal-title{
+      background: #FAFBFC;
+      font-size: 18px;
+      height: 48px;
+      line-height: 48px;
+      border-bottom: 1px solid #e5e5e5;
+      img{
+        margin:0 8px 0 19px;
+        vertical-align: middle;
+      }
+    }
+    .personal-content{
+      padding: 30px 20px;
+      .content-title{
+        height:31px;
+        line-height:31px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        display: block;
+      }
+      p{
+        margin-bottom: 15px;
+        height: 19px;
+        width: 49%;
+        display: inline-block;
+        em{
+          margin-right: 15px;
+          color: #97A2B3;
+        }
+      }
+      .work-describe{
+        .describe-data,em{
+          display: inline-block;
+        }
+        em{
+          color: #97A2B3;
+          margin-right: 15px;
+          vertical-align: top;
+        }
+        p{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .ablity-tabs{
+    #myTab{
+      height: 40px;
+      background: #fff;
+      .active{
+        border-top: 2px solid #F95714;
+        border-right: 1px solid #e5e5e5;
+        border-left: 1px solid #e5e5e5;
+        border-bottom: none;
+        a{
+          color: #F95714;
+          border-radius: 0;
+          border:none;
+        }
+      }
+      li{
+        a{color: #748093;border: none;}
+        a:hover{background: #fff;border: none;}
+      }
+      li:first-child{
+        border-left:none;
+      }
+    }
+    #tabContent{
+      .tab-pane{
+        background: #fff;
+        padding:42px auto 35px;
+        p{
+          text-align: center;
+          font-size: 36px;
+          padding: 43px 0 41px;
+          .score{
+            display: inline-block;
+            height: 24px;
+            border-left: 2px solid #D1D7DE;
+            margin: 0 20px;
+          }
+        }
+        a{
+          display: block;
+          width: 160px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 16px;
+          margin: 28px auto 0;
+          text-align: center;
+          color: #F95714;
+          border:1px solid #F95714;
+          border-radius: 4px;
+        }
+      }
+
+    }
+  }
+  .break-promise{
+    .break-promise-behavior{
+      padding:19px 20px;
+      border-bottom: 1px solid #E5E5E5;
+      .behavior-title{
+        font-size: 24px;
+        margin-bottom: 18px;
+        img{
+          margin-right: 15px;
+          vertical-align: middle;
+        }
+      }
+      .behavior-describe{
+        em{
+          color: #97A2B3;
+          margin-right: 15px;
+          display: inline-block;
+        }
+        p{
+          display: inline-block;
+          margin-left: 74px;
+          margin-top: -12px;
+        }
+      }
+    }
+    .break-promise-behavior:last-child{
+      border: none;
+      margin-bottom: 37px;
+    }
+  }
+}
