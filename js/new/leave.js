@@ -82,9 +82,45 @@ app.controller('search',['$scope','$http','$stateParams','$location',function ($
     //上传离职评价
     $scope.list = [1,2,3,4,5,6,7,8,9,10];
     //切换性别
-    $("#sex span").on("click",function () {
-        $(this).addClass("checked").siblings().removeClass("checked");
-    })
+    // $("#sex span").on("click",function () {
+    //     $(this).addClass("checked").siblings().removeClass("checked");
+    // })
+    // 进入下一步
+    $('#step1_entry').click(function(){
+        $('.uploadleave-status img:eq(0)').attr('src', '../../img/dismission/success.png');
+        $('.uploadleave-status img:eq(1)').attr('src', '../../img/dismission/step2_a.png');
+        $('.uploadleave-status i:eq(0)').removeClass('step_a').addClass('step_b');
+        $('.uploadLeaveSetp2').removeClass('hide');
+        $('.uploadLeaveSetp2').siblings('[class^=uploadLeaveSetp]').addClass('hide');
+    });
+    $('#step2_entry').click(function(){
+        $('.uploadleave-status img:eq(1)').attr('src', '../../img/dismission/success.png');
+        $('.uploadleave-status img:eq(2)').attr('src', '../../img/dismission/step3_a.png');
+        $('.uploadleave-status i:eq(1)').removeClass('step_a').addClass('step_b');
+        $('.uploadLeaveSetp3').removeClass('hide');
+        $('.uploadLeaveSetp3').siblings('[class^=uploadLeaveSetp]').addClass('hide');
+    });
+    $('#step3_entry').click(function(){
+        $('.uploadleave-status img:eq(2)').attr('src', '../../img/dismission/success.png');
+        $('.uploadleave-status img:eq(3)').attr('src', '../../img/dismission/step4_a.png');
+        $('.uploadleave-status i:eq(2)').removeClass('step_a').addClass('step_b');
+        $('.uploadLeaveSetp4').removeClass('hide');
+        $('.uploadLeaveSetp4').siblings('[class^=uploadLeaveSetp]').addClass('hide');
+    });
+    $('#step4_entry').click(function(){
+        $('.uploadleave-status img:eq(3)').attr('src', '../../img/dismission/success.png');
+        $('.uploadleave-status img:eq(4)').attr('src', '../../img/dismission/step5_a.png');
+        $('.uploadleave-status i:eq(3)').removeClass('step_a').addClass('step_b');
+        $('.uploadLeaveSetp5').removeClass('hide');
+        $('.uploadLeaveSetp5').siblings('[class^=uploadLeaveSetp]').addClass('hide');
+    });
+    $('#step5_entry').click(function(){
+        $('.uploadleave-status img:eq(4)').attr('src', '../../img/dismission/success.png');
+        $('.uploadleave-status img:eq(5)').attr('src', '../../img/dismission/step5_a.png');
+        $('.uploadleave-status i:eq(4)').removeClass('step_a').addClass('step_b');
+        $('.uploadLeaveSetp6').removeClass('hide');
+        $('.uploadLeaveSetp6').siblings('[class^=uploadLeaveSetp]').addClass('hide');
+    });
 }])
 .controller('competency',['$scope','$http',function ($scope,$http) {
     //胜任力模型评测(未选状态)==》能力评价（查看状态，只读）

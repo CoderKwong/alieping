@@ -1,3 +1,6 @@
+.hide {
+    display: none;
+}
 .uploadleave{
     width: 100%;
     height: auto;
@@ -31,13 +34,21 @@
     width: 138px;
     float: left;
     margin-top: 24px;
+    background-color: #DFE3E8;
 }
-#step_a{
+.uploadleave-status .step_b{
+    height: 2px;
+    width: 138px;
+    float: left;
+    margin-top: 24px;
+    background-color: #C9EACC;
+}
+/* #step_a{
     background-color: #C9EACC;
 }
 #step_b{
     background-color: #DFE3E8;
-}
+} */
 .uploadleave-step{
     width: 848px;
     margin: 0 auto;
@@ -46,13 +57,23 @@
 }
 .leaveStyle{
     margin-top: 0;
+    padding: 0 20px;
+    min-height: 350px;
 }
 .leaveStyle div{
     position: relative;
     height: 108px;
-    width: 837px;
+    /* width: 837px; */
     margin: 0 auto;
     border-bottom: 1px solid #E5E5E5;
+}
+.leaveStyle .title {
+    left: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    border: 0;
 }
 .leaveStyle div:last-child{
     border: 0;
@@ -119,6 +140,10 @@
     width: 90%;
     height: 500px;
 }
+.uploadLeaveTable .add {
+    color: #507BE6;
+    cursor: pointer;
+}
 .uploadLeaveConfirm {
     text-align: center;
     position: relative;
@@ -160,6 +185,11 @@
     background: #ffffff;    
 }
 
+.uploadLeaveSetp2 input{
+    background: #fff;
+}
+
+
 .uploadeLeaveLabel {
     display: inline-block;
     width: 4px;
@@ -171,6 +201,7 @@
     display: flex;
     background: rgba(250,251,252,1);
     border: 1px solid rgba(229,229,229,1);
+    margin: 0 21px;
 }
 .uploadLeaveInfo > div:nth-child(1) {
     flex: 1;
@@ -207,11 +238,29 @@
     padding: 7px 42px 7px 62px;
     background: #e86230;
     color: #FFFFFF;
+    position: relative;
+}
+.uploadLeaveWoman::before {
+    content: ' ';
+    background: url('../../img/dismission/女-白.png') no-repeat;
+    position: absolute;
+    left: 43px;
+    width: 20px;
+    height: 24px;
 }
 .uploadLeaveMan {
     font-size: 14px;
     padding: 7px 42px 7px 62px;
     border: 1px solid rgba(229,229,229,1);
+    position: relative;
+}
+.uploadLeaveMan::before {
+    content: ' ';
+    background: url('../../img/dismission/男-蓝.png') no-repeat;
+    position: absolute;
+    left: 43px;
+    width: 20px;
+    height: 24px;
 }
 .uploadLeaveSetp3 {
     background: #ffffff;    
@@ -223,29 +272,64 @@
     border: 1px solid rgba(229,229,229,1);
     color: rgba(116,128,147,1);
     text-align: right;
+    margin: 0 21px;
 }
 .uploadLeaveInfo3 > div:nth-child(1) {
-    display: flex;
+    text-align: left;
     margin-left: 49px;
     margin-top: 36px;
 }
-.uploadLeaveInfo3 > div:nth-child(2) {
-    display: flex;
 
+ .form {
+    margin: 0 20px 50px 50px;
+    box-sizing: border-box;
+    text-align: left;
+}
+ .form .inline{
+    width: 49%;
+    display: inline-block;
+    text-align: left;
+    margin: 20px 0;
+    padding-right: 20px;
 }
 
-.uploadLeaveInfo3 > div:nth-child(3) {
+ .form .item {
+    width: 100%;
+    padding-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
     display: flex;
-    margin-left: 21px;
-    margin-bottom: 50px;
 }
-.uploadLeaveInfo3 > div:nth-child(2) > div > div{
-    margin: 20px 0 20px 49px;
+
+ .form .item label{
+    /* display: table-cell; */
+    min-width: 80px;
+    /* position: absolute; */
+    height: 34px;
+    line-height: 34px;
+    text-align: right;
+    display: flex;
 }
-.uploadLeaveInfo3 > div:nth-child(2) > div > div >input {
-    width: 240px;
+
+ .form input {
+    /* display: table-cell; */
+    min-width: 300px;
+    width: 100%;
+    /* width: 100%; */
+    /* margin: 0 55px; */
     height: 34px;
 }
+ .form textarea {
+    width: 100%;
+}
+
+/* .uploadLeaveInfo3 > div:nth-child(2) > div > div{
+    margin: 20px 0 20px 49px;
+} */
+/* .uploadLeaveInfo3 > div:nth-child(2) > div > div >input {
+    width: 240px;
+    height: 34px;
+} */
 .uploadLeaveSetp4 {
     background: #ffffff;    
 }
@@ -256,6 +340,7 @@
     border: 1px solid rgba(229,229,229,1);
     color: rgba(116,128,147,1);
     text-align: right;
+    margin: 0 21px;
 }
 .uploadLeaveInfo4 > div:nth-child(1) {
     display: flex;
@@ -269,7 +354,7 @@
     height: 34px;
 }
 .uploadLeaveSetup4{
-    margin:59px 270px 43px 270px;
+    margin:59px auto ;
     width:400px;
     height:44px;
     background: #97A2B3;
@@ -278,9 +363,63 @@
     color: #FFFFFF;
     letter-spacing: 0.19px;
 }
+.uploadLeaveSetup4.active {
+    background: #F95714;
+}
+
+.tabs-left{
+    /* display: flex; */
+    position: relative;
+}
+
+.tabs-left .nav-tabs {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    border-bottom: 0;
+}
+.tabs-left .nav-tabs li {
+    padding: 10px 7px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 0;
+}
+.tabs-left .nav-tabs li.active {
+    background: #fff;
+    border-left: 2px solid #F95714;
+}
+
+.tabs-left .tab-content {
+    margin-left: 83px;
+    padding: 10px;
+    border: 1px solid #FAFBFC;
+    height: 400px;
+    overflow: auto;
+    border-top: 0;
+}
+
+.tabs-left .tab-content,.tabs-left .tab-content .tab-pane.active {
+    background: #fff;
+}
+
+
+h1 {
+    font-size: 24px;
+    color: #394A66;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+h3 {
+    font-size: 16px;
+    color: #748093;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
 textarea{
     padding-left: 12px;
     padding-top: 7px;
+    border: 1px solid #e5e5e5;
 }
 /*textarea::-moz-placeholder{*/
     /*margin-left: 12px;*/
@@ -289,4 +428,51 @@ textarea{
 
 input{
     padding-left: 12px;
+}
+
+.break-promise {
+    background: #FAFBFC;
+    border: 1px solid #E5E5E5;
+    margin: 30px 0 21px;
+}
+.break-promise-behavior {
+    padding: 19px 20px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.behavior-title {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.break-promise-behavior .behavior-title img {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+.behavior-describe em {
+    color: #97A2B3;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.behavior-describe p{
+    display: inline-block;
+    margin-left: 74px;
+    margin-top: -12px;
+}
+
+.report-basic {
+    background: #FAFBFC;
+    border: 1px solid #E5E5E5;
+    padding: 28px 0 45px;
+    text-align: center;
+}
+
+.report-basic .report-head-name {
+    margin: 15px auto;
+    font-size: 24px;
+}
+
+.report-basic .report-head-basic span{
+    color: #97A2B3;
+    margin-right: 10px;
 }
